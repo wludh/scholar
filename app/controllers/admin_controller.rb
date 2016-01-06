@@ -77,13 +77,13 @@ class AdminController < ApplicationController
     Publisher.update_sherpa_data
     respond_to do |format|
       flash[:notice] = t('common.admin.flash_update_publishers_successful')
-      format.html { redirect_to "/scholar" + admin_update_sherpa_data_path }
+      format.html { redirect_to admin_update_sherpa_data_path }
       format.xml { head :ok }
     end
   rescue Exception => e
     respond_to do |format|
       flash[:notice] = t('common.admin.flash_update_publishers_error', :message => e.message)
-      format.html { redirect_to "/scholar" + admin_update_sherpa_data_path }
+      format.html { redirect_to admin_update_sherpa_data_path }
       format.xml { head :error }
     end
   end
