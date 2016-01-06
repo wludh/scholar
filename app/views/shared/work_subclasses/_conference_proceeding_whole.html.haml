@@ -1,0 +1,18 @@
+%p.metadata
+  = link_to_authors(work)
+
+  - #Conference
+  %br/
+  = work['title_secondary']
+
+  - #Publication
+  %br/
+  = work['title_tertiary']
+
+  -if work['year']
+    (#{work['year']})
+
+  %br/
+  Published by:
+  - #Publisher
+  = link_to_work_publisher(work)

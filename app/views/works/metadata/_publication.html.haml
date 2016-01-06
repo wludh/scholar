@@ -1,0 +1,5 @@
+- unless hide_publication_in_metadata(@work)
+  %tr
+    %td.metalabel #{@work.class.human_attribute_name(:publication) + ':'}
+    %td
+      = link_to @work.publication.name, publication_path(@work.publication.id)

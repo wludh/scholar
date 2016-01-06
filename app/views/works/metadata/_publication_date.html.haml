@@ -1,0 +1,5 @@
+-# must pass in label
+- if @work.publication_date_year.present?
+  %tr
+    %td.metalabel #{Work.human_attribute_name(:publication_date)}:
+    %td #{@work.publication_date_string}

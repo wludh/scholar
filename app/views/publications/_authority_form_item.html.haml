@@ -1,0 +1,8 @@
+%tr.publication{:id => authority_form_item.id, :class => [cycle("odd", "even"), :authority_option]}
+  = hidden_field_tag "pub_ids[]", authority_form_item.id
+  %td.col-xs-1= radio_button_tag "auth_id", authority_form_item.id
+  %td.col-xs-1= authority_form_item.issn_isbn
+  %td.col-xs-3= link_to name_or_unknown(authority_form_item.authority.name), edit_publication_path(authority_form_item)
+  %td.col-xs-3= link_to name_or_unknown(authority_form_item.publisher.authority.name), publisher_path(authority_form_item.publisher)
+  %td= authority_form_item.works.length
+  %td.col-xs-1= link_to 'remove', remove_from_box_publications_path(:rem_pa => authority_form_item.id, :page => page)

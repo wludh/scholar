@@ -1,0 +1,18 @@
+%ul#global-nav.header-nav
+  -# %li
+    -# = static_html_link('about.html', t('app.about'))
+  -# %li
+    -# = static_html_link('faq.html', t('app.faq'))
+  - if logged_in?
+    %li
+      %span #{link_to "Add My Work", "/scholar/users/" + current_user.id.to_s + "/imports/new?person_id=" + current_user.person_id.to_s, class: "btn btn-primary add-work-btn"}
+    %li
+      %span #{link_to t('app.account'), edit_user_path(current_user)}
+    %li
+      %span #{link_to t('app.logout'), logout_path}
+  - else
+    %li
+      %span #{link_to "#{t('app.login')}" , login_path(:return_to => request.fullpath)}
+      |
+      %span #{link_to "#{t('app.signup')}", signup_path(:return_to => request.fullpath)}
+      -# %span #{link_to "#{t('app.login')}/#{t('app.signup')}", login_path(:return_to => request.fullpath)}

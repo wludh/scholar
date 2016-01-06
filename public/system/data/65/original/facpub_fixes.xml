@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<refworks xmlns:refworks="www.refworks.com/xml/">
+
+<reference>
+<id>1327</id>
+<u1>0</u1>
+<u2>2012/01/06</u2>
+<a1>Erickson,J. C.</a1>
+<a1>Angeli,T. R.</a1>
+<a1>O'Grady,G.</a1>
+<a1>Erickson,J. C.</a1>
+<a1>Du,P.</a1>
+<a1>Paskaranandavadivel,N.</a1>
+<a1>Bissett,I. P.</a1>
+<a1>Cheng,L. K.</a1>
+<a1>Pullan,A. J.</a1>
+<t1>Mapping small intestine bioelectrical activity using high-resolution printed-circuit-board electrodes</t1>
+<yr>2011</yr>
+<jf>Proceedings of the Annual International Conference of the IEEE Engineering in Medicine and Biology Society, EMBS</jf>
+<t2>33rd Annual International Conference of the IEEE Engineering in Medicine and Biology Society, EMBS 2011</t2>
+<vo></vo>
+<is></is>
+<sp>4951</sp>
+<op>4954</op>
+<ab>In this study, novel methods were developed for the in-vivo high-resolution recording and analysis of small intestine bioelectrical activity, using flexible printed-circuit-board (PCB) electrode arrays. Up to 256 simultaneous recordings were made at multiple locations along the porcine small intestine. Data analysis was automated through the application and tuning of the Falling-Edge Variable-Threshold algorithm, achieving 92% sensitivity and a 94% positive-predictive value. Slow wave propagation patterns were visualized through the automated generation of animations and isochronal maps. The methods developed and validated in this study are applicable for use in humans, where future studies will serve to improve the clinical understanding of small intestine motility in health and disease. © 2011 IEEE.</ab>
+<sn>1557170X; 9781424441211 (ISBN)</sn>
+<do>10.1109/IEMBS.2011.6091227</do>
+<rt>Conference Proceedings</rt>
+<u3>Conference Proceedings</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+
+</refworks>

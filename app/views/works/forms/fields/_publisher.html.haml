@@ -1,0 +1,3 @@
+- @publisher ||= @work.publisher
+= label 'publisher', :name, "#{@work.class.human_attribute_name(:publisher)}:"
+= text_field 'publisher', :name, {:class => 'text', :size => 40}

@@ -1,0 +1,13 @@
+- include_stylesheet('specific/works/_local_recommendations')
+- if @recommendations.size > 0
+  .right_box
+    .box_heading #{t '.heading', :university_name => t('personalize.university_short_name')}
+    %ul.recommendations
+      - @recommendations.each do |rec|
+        %li
+          %p.metadata #{link_to rec.title_primary.titleize, work_path(rec)}
+          %p.metadata
+            - if rec.publication.present?
+              #{rec.publication.authority.name} |
+            - if rec.publication_date_year
+              #{rec.publication_date_year}

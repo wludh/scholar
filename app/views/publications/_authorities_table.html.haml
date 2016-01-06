@@ -1,0 +1,20 @@
+%table#publications.table.table-hover.table-condensed
+  %thead
+    %tr
+      %th #{t 'app.select'}
+      %th #{Publication.human_attribute_name(:issn_isbn)}
+      %th #{t 'common.publications.publication_name'}
+      %th #{Publisher.model_name.human}
+      %th #{Work.model_name.human_pl}
+  %tbody
+    -@current_objects.each do |publication|
+      %tr#publication.publication{:id => publication.id, :class => cycle("odd", "even")}
+        %td #{link_to t('app.add'), add_to_box_publications_path(:new_pa => publication.id, :page => @page)}
+        %td #{publication.issn_isbn}
+        %td
+          %span{:title => publication.sort_name}
+          #{link_to name_or_unknown(publication.authority.name), publication_path(publication)}
+        %td
+          %span{:title => publication.publisher.sort_name}
+          #{link_to name_or_unknown(publication.publisher.authority.name), publisher_path(publication.publisher)}
+        %td #{publication.works.size}

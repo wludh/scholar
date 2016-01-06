@@ -1,0 +1,19 @@
+- if !group_list_item.hide?
+  - # only show groups that are in the @groups list
+  - if @groups.include?(group_list_item)
+    %li.parent.list-style-none
+      .membership-group{:id => "group_id-#{group_list_item.id}"}
+        - if group_list_item.children.empty?
+          &nbsp;&nbsp;
+        - else
+          %a.toggle-switch{:'data-item-id' => group_list_item.id, :href => 'javascript:void(0)'} #{@query.blank? ? '+' : '-'}
+        - parent_id = group_list_item.parent.nil? ? nil : group_list_item.parent.id
+        - if @person.groups.include?(group_list_item)
+          = check_box_tag "group_id[].ignore", "#{group_list_item.id}", true, {:disabled => true}
+        - else
+          = check_box_tag "group_id[]", "#{group_list_item.id}", false, {:'data-parent-id' => parent_id, :class => 'group-checkbox'}
+        = group_list_item.name
+
+      - unless group_list_item.children.empty?
+        %ul#children_of.children.list-style-none{:id => group_list_item.id, :style => @query.if_blank("display: none;")}
+          = render :partial => 'group_list_item', :collection => group_list_item.children

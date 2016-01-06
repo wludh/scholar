@@ -1,0 +1,8 @@
+.col-xs-7.column
+  .col-xs-7
+    %ul.actions
+      %li #{status_link(@person, @status, 'unverified')}
+      |
+      %li #{status_link(@person, @status, 'verified')}
+      |
+      %li #{status_link(@person, @status, 'denied')}

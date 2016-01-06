@@ -1,0 +1,19 @@
+-include_stylesheets('specific/memberships/_group', 'specific/memberships/_group_list_item')
+-membership = Membership.find_by_person_id_and_group_id(@person.id, group.id)
+%li{ :id => "group_#{group.id}"}
+  %strong
+    %font{:size => '3'}
+      = group.name
+    %font{:size => '1'}
+      = link_to t('.leave'), membership_path(membership), :confirm => t('.confirm'), :method => :delete
+
+  %div.membership-group-form
+    = form_for  membership, :as => :membership, :url => membership_path(membership), :remote => true, :html => {:method => :put} do |form|
+      #{t 'app.title'}
+      = form.text_field :title
+      #{t '.year_joined'}:
+      = form.date_select 'start_date', :start_year => 1950, :end_year => Time.now.year, :discard_month => true, :include_blank => true
+      #{t '.year_left'}:
+      = form.date_select 'end_date', :start_year => 1950, :end_year => Time.now.year, :discard_month => true, :include_blank => true
+      %br/
+      = submit_tag t('app.save')

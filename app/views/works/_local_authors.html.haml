@@ -1,0 +1,12 @@
+- include_stylesheet('specific/works/_local_authors')
+- if @work.people.size > 0
+  = render :layout => 'layouts/right_box_no_border' do
+    .box_heading #{t 'works.local_authors.heading', :university_name => t('personalize.university_short_name')}
+    %ol.people
+      -@work.people.each do |person|
+        %li.inline.no-padding-or-margin
+          .col-xs-2.person-image
+            = link_to(image_tag(person.image_url, :alt => person.display_name, :title => person.display_name), person_path(person))
+            .text-center
+              %strong #{ person.works.verified.size}
+              %h7.h7 #{link_to person.last_name, person_path(person)}

@@ -1,0 +1,8 @@
+= render :layout => '/shared/work_subclasses/layout.html.haml', :locals => {:work => work} do
+  - #Conference
+  %br/
+  = work['title_secondary']
+
+  %br/
+  = link_to_work_publisher(work)
+

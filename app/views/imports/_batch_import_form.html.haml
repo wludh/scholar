@@ -1,0 +1,7 @@
+= form_for @import, :as => :import, :url => user_imports_path(:user_id => current_user.id), :html => {:class=>"work_form", :method => :post, :multipart => true} do |form|
+  %fieldset.col-xs-4
+    %legend #{t('.legend')}
+
+    %p #{t('.text')}
+
+    = render 'shared/upload_form', :form => form

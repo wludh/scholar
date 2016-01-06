@@ -1,0 +1,19 @@
+- include_data_tables
+- include_javascript('specific/publishers/authorities')
+- if current_user_any_role?("editor", "Group")
+  = render :layout => 'layouts/admin_bar' do
+    %li #{link_to t('common.publishers.new'), new_publisher_path}
+
+= render :layout => 'layouts/main_body', :locals => {:header => t('common.publishers.authority')} do
+  #authority_form
+    %p #{t('publishers.authorities.instructions_html')}
+    = render "authority_form", :authorities => @pas, :page => @page
+
+  = render "shared/alpha_pagination"
+
+  = render :partial => 'authorities_table'
+
+  %br/
+  %br/
+  = render "shared/alpha_pagination"
+

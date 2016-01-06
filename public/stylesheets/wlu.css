@@ -1,0 +1,178 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700);
+
+html, body {
+    font-family: "PT Sans Narrow", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 1.0rem;
+}
+
+#header, #footer {
+    background-image: none;
+    border-bottom-color: #009;
+    color: #000;
+}
+
+#header a {
+    color: #009;
+}
+
+#header .advanced-search-link {
+    margin: 5px 11px 0px 0px;
+}
+
+#navigation #current a {
+    color: #009;
+}
+
+#admin-actions {
+    border-bottom-color: #009;
+    background-color: #ddf;
+}
+
+.screen-format {
+    padding: 1em 2em;
+}
+
+.even {
+    border-top: none;
+    border-bottom: none;
+}
+
+.work {
+    border-bottom: 1px solid #ccc;
+}
+
+#edit-actions li a {
+    color: #009;
+}
+
+.box_heading, div.right_box_no_border h3 {
+    height: inherit !important;
+}
+
+#alpha-nav li {
+    display: inline-block;
+}
+
+#alpha-nav.pagination {
+    margin-bottom: 1em;
+}
+
+.pagination > li > a, .pagination > li > span {
+    color: #009;
+    background-color: inherit;
+    padding: 6px 9px;
+}
+
+.pagination {
+    padding: 10px;
+}
+
+h2 {
+    padding-bottom: 10px;
+}
+
+div.person {
+    margin: 0 0 2em 0;
+}
+
+.person-image-wrapper {
+    position: relative;
+    height: 145px;
+    width: 110px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.person-image {
+    border: none;
+    width: 110px;
+/*    min-height: 122px; */
+}
+
+.person-image-wrapper .person-image {
+    height: 145px;
+    width: auto;
+    margin:0 -50%;
+}
+
+#local-relations .person-image img {
+    height: 100px;
+}
+
+.person-image-small {
+    border: none;
+    width: 60px;
+    height: auto;
+}
+
+.person-image-large {
+    border: none;
+    width: 125px;
+}
+
+.person-image-extra-large {
+    border: none;
+    width: 175px;
+}
+#local-nav, #admin-nav {
+    padding-bottom: 1.5em !important;
+}
+
+#flash-messages + div {
+    margin-bottom: 25px;
+}
+
+#groups {
+    padding: 0px;
+}
+
+table#metadata td.metalabel {
+    vertical-align: top;
+    text-align: right;
+    font-weight: bold;
+    background-color: #EEE;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    width: 25%;
+    padding: 0px 5px;
+}
+
+table#metadata td.metalabel + td {
+    padding: 0px 5px;
+}
+
+.facet_heading {
+    padding-top: inherit !important;
+    padding-bottom: 0.5em;
+    height: auto !important;
+}
+
+.pagination a.none {
+    color: lightgray;
+}
+
+.person-image-metadata {
+    margin: 0px;
+    bottom: 2.2em;
+    background-color: rgba(255, 255, 255, 0.75);
+    font-size: 0.8em;
+    width: 3em;
+    border-top-right-radius: 10px;
+}
+
+.person-last-name {
+    bottom: 1.5em;
+}
+
+.person-coauthor {
+    height: 100%;
+}
+
+.add-work-btn {
+    color: #fff !important;
+    margin-bottom: 6px;
+}
+
+.add-work-btn:hover {
+    color: #000 !important;
+}

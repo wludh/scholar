@@ -1,0 +1,5 @@
+- unless skip_title_secondary(@work)
+  %tr
+    %td.metalabel #{@work.class.human_attribute_name(:title_secondary)}:
+    %td
+      = raw @work.title_secondary

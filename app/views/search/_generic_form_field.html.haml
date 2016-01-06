@@ -1,0 +1,7 @@
+-#requires field, text, and label to be passed.
+.col-xs-12
+  .col-xs-6
+    %label.col-xs-4 #{label}
+    %p.col-xs-8 #{text}
+  = text_field_tag(field, nil, :size => 40, :class => 'col-xs-6', :placeholder => search_example(field))
+  -# %p= search_example(field)

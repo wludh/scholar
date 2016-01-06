@@ -1,0 +1,27 @@
+- include_stylesheet('specific/works/fields/common')
+-# Add an Author field, with Auto-Complete.
+-# Also adds a list of existing Authors
+
+-#  @author_name_strings should only exist if there were errors in saving work
+-# if that doesn't exist use authors associated with work
+- authors = @author_name_strings
+- role = @work.creator_role
+- authors ||= @work.work_name_strings.collect{ |wns| {:name => wns.name_string.name, :role => wns.role} if wns.role == role} if @work.name_strings
+- authors.compact!
+
+.author_block
+  = label :author, :string, t_work_role_name_pl(role) + ':'
+  %span.instructions= t('works.forms.fields.author_name_strings.example')
+
+  %ol#author_name_strings_list
+    -# Build list of authors
+    - if authors.empty?
+      %li.list_item{:id => "author_0", :class => "movable"}
+        = hidden_field_tag "author_roles[]", "#{role}"
+        = text_field_tag "authors[]", nil, {:class => 'text'}
+        = link_to_function t('works.forms.fields.author_name_strings.remove'),  'remove_enclosing_list_item(this);'
+    -else
+      - authors.each_with_index do |author, i|
+        = render 'works/forms/fields/author_list_item', :ns_id=> i, :ns_name=> author[:name], :ns_role=> author[:role]
+
+  = link_to_function t('works.forms.fields.author_name_strings.add', :role => t_work_role_name(role)), 'add_author_list_item();'

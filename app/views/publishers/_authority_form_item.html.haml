@@ -1,0 +1,6 @@
+%tr.publisher{:id => "#{authority_form_item.id}", :class => "#{cycle("odd", "even")} authority_option"}
+  = hidden_field_tag "pub_ids[]", authority_form_item.id
+  %td= radio_button_tag "auth_id", authority_form_item.id
+  %td= link_to name_or_unknown(authority_form_item.authority.name), edit_publisher_path(authority_form_item)
+  %td= authority_form_item.publications.length
+  %td= link_to t('app.remove'), remove_from_box_publishers_path(:rem_pa => authority_form_item.id, :page => page)

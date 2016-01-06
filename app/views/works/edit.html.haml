@@ -1,0 +1,12 @@
+- include_javascripts('specific/works/autocomplete', 'specific/works/common_edit_create')
+- if current_user_role?("editor", @work)
+  = render :layout => 'layouts/admin_bar' do
+    %li= link_to t('works.edit.delete_link'), work_path(@work), :method => :delete, :confirm => t('works.edit.confirm')
+
+= render :layout => 'layouts/main_body_no_h2' do
+  = render 'change_type_form'
+
+  %h2= t('works.edit.header')
+
+  .col-xs-12
+    = render 'edit_work_form'

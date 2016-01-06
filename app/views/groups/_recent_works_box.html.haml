@@ -1,0 +1,5 @@
+%h3.heading
+  =link_to t('.recent_works'), group_works_path(@group)
+%ol#works.col-xs-12.works
+  - @works.first(3).each do |work|
+    = render "shared/work", :work => work

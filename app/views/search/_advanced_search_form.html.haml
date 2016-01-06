@@ -1,0 +1,27 @@
+= form_tag advanced_search_path, :method => :get do
+
+  %fieldset.col-xs-12
+    %legend #{t('.legend')}
+
+    = render 'generic_form_field', :field => :keywords, :text => t('search.advanced_search_form.keywords_text'),
+      :label => Keyword.model_name.human_pl
+    = render 'generic_form_field', :field => :title, :text => t('search.advanced_search_form.title_text'),
+      :label => t('app.title')
+    = render 'generic_form_field', :field => :authors, :text => t('search.advanced_search_form.authors_text'),
+      :label => t('app.authors')
+    = render 'generic_form_field', :field => :groups, :text => t('search.advanced_search_form.groups_text'),
+      :label => Group.model_name.human_pl
+    = render 'generic_form_field', :field => :issn_isbn, :text => t('search.advanced_search_form.issn_isbn_text'),
+      :label => Publication.human_attribute_name(:issn_isbn)
+
+    %div.col-xs-12
+      .col-xs-6
+        %label.col-xs-4 #{t('app.year')}
+        %p.col-xs-8= t('search.advanced_search_form.restrict_date')
+      = text_field_tag(:start_date, nil, :size => 4, :placeholder => "2013")
+      &nbsp; #{t('.to')} &nbsp;
+      = text_field_tag(:end_date, nil, :size => 4, :placeholder => "2015")
+      -# %p= search_example(:year)
+
+    %div.col-xs-12.text-right
+      = submit_tag t('app.search'), class: "btn btn-primary"

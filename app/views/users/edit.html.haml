@@ -1,0 +1,30 @@
+= render :layout => 'layouts/admin_bar' do
+  %li= link_to_unless_current "Show all Imports", user_imports_path(@user)
+  - if logged_in? and @current_user.has_any_role?("editor", Group)
+    %li= link_to_unless_current "Add an Import", new_user_import_path(@user)
+
+= render :layout => '/layouts/main_body_no_h2' do
+  = error_messages_for :user, :class => 'notice'
+  %h2= t('users.edit.header')
+
+  %fieldset
+    %legend= t('users.edit.email_legend')
+    = form_for :user, :url => request_update_email_user_path(@user), :html => {:method => :post} do |form|
+      %p
+        %label #{User.human_attribute_name(:email)}:
+        = form.text_field :email
+      %p
+        %strong #{t 'app.important'}:
+        #{t('users.edit.important_text_html')}
+      %p.submit
+        = submit_tag t('users.edit.email_submit')
+  %fieldset
+    %legend= t('users.edit.legend')
+    = form_for :user, :url => user_path(@user), :html => {:method => :put} do |form|
+      %p
+        %label #{User.human_attribute_name(:default_locale)}:
+        = form.select(:default_locale, I18n.available_locales.collect {|locale| [t('i18n.language.name', :locale => locale), locale.to_s]}.sort, :selected => (@user.default_locale || I18n.locale).to_s)
+      %p.submit
+        = submit_tag t('app.update')
+  %p
+    = link_to t('users.edit.change_password'), edit_user_password_path(@user)

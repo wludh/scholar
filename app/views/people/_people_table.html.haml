@@ -1,0 +1,16 @@
+%table#people.table.table-condensed.table-hover
+  %tr
+    %th.col-xs-1
+    %th.col-xs-3 #{t 'app.name'}
+    %th.col-xs-6 #{t '.recent_publication'}
+    %th.col-xs-1.text-right.last #{Work.model_name.human_pl}
+  -@current_objects.each do |person|
+    %tr{:class => cycle("odd", "even")}
+      %td.person-image #{link_to image_tag(person.image_url, :class => "person-image-small"), person_path(person)}
+      %td #{link_to "#{person.display_name}", person_path(person)}
+      - if person.works.count > 0
+        - work = person.works.order("publication_date_year desc, publication_date_month desc, publication_date_day desc").includes(:work_name_strings => :name_string).first
+        %td #{link_to work.to_s, work_path(work)}
+      - else
+        %td
+      %td.text-right #{person.works.verified.count}

@@ -1,0 +1,32 @@
+- include_stylesheet('specific/publishers/show')
+- if current_user_any_role?("editor", Group) and @export.blank?
+  = render :layout => 'layouts/admin_bar' do
+    %li #{link_to t('common.publishers.edit'), edit_publisher_path(@publisher)}
+
+= render :layout => 'layouts/main_body_no_h2' do
+  - if @export.present?
+    %h2 #{Work.model_name.human_pl}
+    = @works
+
+  - else
+    %h2.col-xs-9.left #{ name_or_unknown(@publisher.name)}
+    %span.col-xs-2.right
+      = render 'shared/sherpa_status', :publisher => @publisher, :show_explanation => false
+
+    %div.clear-both
+    = render "shared/people", :count => 10, :randomize => false
+    = render "shared/groups", :count => 10
+    = render 'shared/pub_common/search_within_div', :submit_url => publisher_path
+
+    / Authority
+    #authority.col-xs-12
+      - if @publisher.present?
+        %h4
+          #{ name_or_unknown(@publisher.name) }
+          &ndash; #{t('publishers.show.auth_name')}:
+        %ul.authority-children
+          - @publisher.authority_for.uniq.each do |auth|
+            %li= link_to name_or_unknown(auth.name), publisher_path(auth.id)
+      - else
+        %h3 #{t 'publishers.show.auth_title'}
+        %p #{link_to name_or_unknown(@publisher.authority.name), publisher_path(@publisher.authority)}

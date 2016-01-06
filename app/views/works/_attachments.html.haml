@@ -1,0 +1,20 @@
+- require 'sword_1_3_adapter'
+.links
+  %strong #{t '.local_library'}: #{link_to_findit(@work)}
+  - if @work.attachments.present?
+    - if @work.archived?
+      - @work.external_system_uris.each do |s|
+        .file
+          %strong #{t '.download_page'}: #{link_to(s.uri, s.uri)}
+    - else
+      - @work.attachments.each do |f|
+        .file
+          %strong #{t '.download_file'}: #{link_to(f.data_file_name, f.public_filename)}
+          (#{f.filesize}) -
+          = link_to t('app.remove'), attachment_path(f), :method => :delete
+      -if Sword_1_3_Adapter.configured?
+        %br/
+        %p
+          The #{t 'app.file', :count => files.size} above will shortly be deposited in #{link_to(t('personalize.repository_name'), $REPOSITORY_BASE_URL)}.
+
+%br/

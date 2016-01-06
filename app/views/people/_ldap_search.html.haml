@@ -1,0 +1,27 @@
+= form_tag( {:action => :new}, {:method => :get} ) do
+  %p
+    #{t '.explanation'}:
+  %p
+    = text_field_tag :q, params[:q]
+    = submit_tag t('app.search')
+    &nbsp; #{t '.example'}
+
+- if @ldap_results
+  = js_data_div('ldap_results', @ldap_results)
+  %fieldset
+    %legend #{t '.results'}
+    - if @ldap_results.length > 0
+      %div.ldap-results
+        %ul#ldap_query_results
+          - @ldap_results.each_with_index do |l, i|
+            - # I don't know why :collection doesn't work here
+            = render :partial => "ldap_result", :object => l, :locals => {:i => i}
+    - else
+      %p #{t '.no_results', :query => params[:q]}
+
+- if @fail
+  %fieldset
+    %legend #{t '.results'}
+    %p.ldap-fail= t('.failed', :message => @fail_message)
+
+

@@ -1,0 +1,13 @@
+.col-xs-10.prepend-1
+  %h4.error
+    #{t('.error', :query => @query)}
+    -if @spelling_suggestions.present?
+      = render :partial => 'spelling_suggestions'
+
+  %h4 #{t '.suggestions'}:
+  %ul
+    %li #{t '.double_check'}
+    %li #{t '.different_keywords'}
+    %li #{t '.advanced_search'}
+
+  = render "advanced_search_form"

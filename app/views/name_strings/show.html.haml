@@ -1,0 +1,24 @@
+- include_stylesheet('specific/name_strings/show')
+- if current_user_any_role?("editor", Group)
+  = render :layout => 'layouts/admin_bar' do
+    %li #{link_to t('name_strings.show.edit_link'), edit_name_string_path(@name_string)}
+
+= render :layout => 'layouts/main_body_no_h2' do
+  %h2
+    #{t 'app.name'}:
+    %strong #{@name_string.name}
+
+  .col-xs-12
+    - if @name_string.people.size > 0
+      %h4 #{t 'name_strings.show.have_published'}:
+      %ol.people
+        -@name_string.people.each do |person|
+          %li.inline.no-padding-or-margin
+            .col-xs-2
+              = link_to(person_image(person), person_path(person))
+              .person-image-metadata
+                %strong #{person.works.size}
+              .person-last-name.left
+                %strong #{link_to person.last_name, person_path(person)}
+    - else
+      %p #{t 'name_strings.show.no_claim', :university_name => t('personalize.university_short_name')}

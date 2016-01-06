@@ -1,0 +1,21 @@
+- include_javascript('specific/groups/_form')
+%fieldset
+  %legend #{Group.model_name.human}
+  %p
+    %label #{t('app.name')}
+    %br/
+    = text_field :group, :name
+  %p
+    %label #{t('app.description')}
+    %br/
+    = form.text_area :description
+  %p
+    %label #{t('app.url')}
+    %br/
+    = form.text_field :url
+  %p
+    %label #{t('.parent_group')}
+    %br/
+    = form.collection_select :parent_id, @groups, :id, :name, :include_blank => true
+  %p.submit
+    = submit_tag t('app.save')

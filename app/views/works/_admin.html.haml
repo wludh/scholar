@@ -1,0 +1,7 @@
+- require 'sword_1_3_adapter'
+- if Sword_1_3_Adapter.configured? and @work.ready_to_archive?
+  %fieldset
+    %legend #{t 'works.layouts.merge_form.accepted'}
+    %ul#tasks
+      %li
+        = link_to t('works.admin.link'), admin_deposit_via_sword_path(:work_id => @work)

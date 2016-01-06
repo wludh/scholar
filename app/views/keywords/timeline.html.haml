@@ -1,0 +1,21 @@
+- include_stylesheet('specific/keywords/timeline')
+- include_javascript('specific/keywords/timeline')
+
+= render :layout => '/layouts/main_body', :locals => {:header => body_header(@current_object)} do
+
+  #yearnav
+    %h3#curyear
+    #track1
+
+  #timeline-tagcloud.col-xs-6
+    %h3 #{t('keywords.timeline.cloud_header')}
+    = render :partial => "timeline_list", :collection => @year_keywords
+
+  #timeline-chart.col-xs-4.prepend-1.last-1
+    %h3 #{t('keywords.timeline.chart_header')}
+    #chart-img
+      %img.left{:src => "/images/ajax-loader.gif", :title => t('.chart_loading')}
+
+  = js_data_div('year-tags', @years)
+  = js_data_div('chart-urls', @chart_urls)
+  = js_data_div('work-counts', @work_counts)

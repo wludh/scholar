@@ -1,0 +1,43 @@
+- include_stylesheet('specific/works/index')
+
+/ ### Person / Works ###
+- if params[:person_id] and current_user_role?("editor", Person.find(params[:person_id]))
+  = render :partial => "people/admin_actions", :layout => 'layouts/admin_bar'
+
+- elsif current_user_any_role?("editor", Group) or current_user_role?('admin', Work)
+  = render :layout => 'layouts/admin_bar' do
+    - if current_user.has_any_role?("editor", Group)
+      %li #{link_to t('works.index.add'), new_user_import_path(current_user)}
+    - if current_user.has_role?('admin', Work)
+      %li #{link_to(t('works.index.view_orphans'), orphans_works_path)}
+
+= render :layout => 'layouts/main_body_no_h2' do
+  - if @view == "all"
+
+    - if params[:person_id]
+      = render 'person_index_search'
+    - if params[:group_id]
+      = render 'group_index_search'
+
+    #results.col-xs-12
+      .col-xs-2
+        = render "shared/facets"
+      .col-xs-offset-1.col-xs-9
+        = render "shared/works"
+
+  - else
+    -# %h2 #{t('works.index.heading_html')}
+
+    .col-xs-8
+      -# = render "shared/people", :count => 15, :randomize => true
+      = render "shared/people", :count => 18, :randomize => true
+    .col-xs-4.last
+      = render 'first_works'
+
+    #facets.col-xs-12
+      .col-xs-4
+        = render "shared/groups", :count => 10
+      .col-xs-4
+        = render "shared/publications", :count => 10
+      .col-xs-4.last
+        = render "shared/publishers", :count => 10

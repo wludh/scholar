@@ -1,0 +1,14 @@
+%table#publishers.table.table-hover.table-condensed
+  %thead
+    %tr
+      %th #{t 'app.select'}
+      %th #{t 'app.title'}
+      %th #{Publication.model_name.human_pl}
+  %tbody
+    -@current_objects.each do |publisher|
+      %tr#publisher.publisher{:id => publisher.id, :class => cycle("odd", "even")}
+        %td #{link_to t('app.add'), add_to_box_publishers_path(:new_pa => publisher.id, :page => @page)}
+        %td
+          %span{:title => publisher.sort_name}
+          #{link_to name_or_unknown(publisher.name), publisher_path(publisher)}
+        %td #{publisher.publications.length}

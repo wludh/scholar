@@ -1,0 +1,2016 @@
+<?xml version="1.0" encoding="utf-8"?>
+<refworks xmlns:refworks="www.refworks.com/xml/">
+
+
+<reference>
+<id>801</id>
+<u1>0</u1>
+<a1>Mazilu, I.</a1>
+<a1>Zamora, G.</a1>
+<a1>Gonzalez, J.</a1>
+<t1>A stochastic model for microtubule length dynamics</t1>
+<yr>2010</yr>
+<jf>Physica A: Statistical Mechanics and its Applications</jf>
+<t2></t2>
+<vo>389</vo>
+<is>3</is>
+<sp>419</sp>
+<op>427</op>
+<ab>In this paper, we use random walk theory to describe the length dynamics of microtubules, one of the principal components of the cytoskeleton. We present a simple two-state model (growing and shrinking) of microtubule length evolution that incorporates a variable rate of switching between the states. Using the generating function technique, we calculate the mean length of microtubule, its variance and diffusion coefficient. We also report analytical and computer simulation results for the mean number of positive monomers in microtubule, and find good qualitative agreement with experimental data. © 2009 Elsevier B.V. All rights reserved.</ab>
+<sn>03784371</sn>
+<do>10.1016/j.physa.2009.10.017</do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn> </cn>
+<u4> </u4>
+</reference>
+<reference>
+<id>802</id>
+<u1>0</u1>
+<a1>Morel, L. E.</a1>
+<t1>Lincoln, Race and the Spirit of '76</t1>
+<yr>2010</yr>
+<jf>Perspectives on Political Science</jf>
+<t2></t2>
+<vo>39</vo>
+<is>1</is>
+<sp>3</sp>
+<op>11</op>
+<ab> </ab>
+<sn>10457097</sn>
+<do>10.1080/10457090903455655</do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn> </cn>
+<u4> </u4>
+</reference>
+<reference>
+<id>803</id>
+<u1>0</u1>
+<a1>Murdock, K.K.</a1>
+<a1>Greene, C.</a1>
+<a1>Adams, S.K.</a1>
+<a1>Hartmann, W.</a1>
+<a1>Bittinger, S.</a1>
+<a1>Will, K.</a1>
+<t1>The puzzle of problem-solving efficacy: Understanding anxiety among urban children coping with asthma-related and life stress</t1>
+<yr>2010</yr>
+<jf>Anxiety, Stress and Coping</jf>
+<t2></t2>
+<vo>23</vo>
+<is>4</is>
+<sp>383</sp>
+<op>398</op>
+<ab>Children with asthma living in urban environments are at risk for experiencing anxiety by virtue of both social context and health-related stressors. Although the use of active coping strategies is generally associated with more optimal psychosocial functioning, there is evidence that active coping is less helpful in response to uncontrollable or severe stress. Expectations that one can fix a problem that is uncontrollable or insurmountable may create distress. Problem solving efficacy was examined as a moderator of the association between stress and anxiety among children residing in inner-city neighborhoods. It was hypothesized that children's perceptions of high problem-solving efficacy would exacerbate their vulnerability to stress. Forty-five parent-child dyads were recruited from urban community health centers. Most participants were members of ethnic minority groups. Hierarchical multiple regression analyses revealed main effects of asthmarelated stress and life stress on children's anxiety. However, these effects were moderated by problem-solving efficacy. Asthma-related stress and life stress were positively associated with anxiety only for children who had the highest levels of problem-solving efficacy. In other words, positive expectations about the ability to solve problems functioned as a liability for highly stressed children. Implications for psychosocial interventions with at-risk children are discussed. © 2010 Taylor & Francis.</ab>
+<sn>10615806</sn>
+<do>10.1080/10615800903118049</do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn> </cn>
+<u4> </u4>
+</reference>
+<reference>
+<id>804</id>
+<u1>0</u1>
+<a1>Murdock, K.K.</a1>
+<a1>Robinson, E.M.</a1>
+<a1>Adams, S.K.</a1>
+<a1>Berz, J.</a1>
+<a1>Rollock, M.J.</a1>
+<t1>Family-school connections and internalizing problems among children living with asthma in urban, low-income neighborhoods.</t1>
+<yr>2009</yr>
+<jf>Journal of child health care : for professionals working with children in the hospital and community</jf>
+<t2></t2>
+<vo>13</vo>
+<is>3</is>
+<sp>275</sp>
+<op>294</op>
+<ab>Children with asthma living in urban environments are at risk for experiencing internalizing problems and difficulties at school due to social context and health-related stressors. Parent confidence and participation in the school and children's attitudes about school were explored in association with children's depressed mood and school anxiety. Forty-five parent-child dyads were recruited from urban community health centers. Most participants were members of ethnic minority groups. Hierarchical multiple regression analyses revealed that higher levels of parent confidence in the school were associated with fewer symptoms of school anxiety in children. Children's attitudes toward school moderated the relation between parent participation in the school and children's depressed mood. Specifically, lower levels of parent participation were associated with higher levels of depressed mood only for children with the least positive school attitudes. Although preliminary, these results suggest the importance of attending to family-school connections to optimize the school-related psychological functioning of children living with asthma in urban environments.</ab>
+<sn>17412889</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>805</id>
+<u1>0</u1>
+<a1>Necaise, R.D.</a1>
+<a1>Prosl, R.H.</a1>
+<t1>The color cut quantization algorithm</t1>
+<yr>2009</yr>
+<jf>Proceedings of the 47th Annual Southeast Regional Conference, ACM-SE 47</jf>
+<t2></t2>
+<vo> </vo>
+<is> </is>
+<sp> </sp>
+<op> </op>
+<ab>Color quantization is the process of reducing the number of colors used in an image while maintaining the appearance of the original as much as possible. We introduce a new adaptive heuristic color quantization algorithm that can be used in solving this problem. The color cut algorithm iteratively sub divides the RGB color space into clusters containing an equal number of unique image colors from which a representative set is selected for recoloring the image. The new color cut algorithm produces better analytical and visual results compared to some of the more popular heuristic algorithms. ©2009 ACM.</ab>
+<sn>9781605584218 (ISBN)</sn>
+<do>http://dx.doi.org/10.1109/ISSRE.2007.2610.1145/1566445.1566504</do>
+<rt>Conference Proceedings</rt>
+<u3>Conference Proceedings</u3>
+<cn> </cn>
+<u4> </u4>
+</reference>
+<reference>
+<id>806</id>
+<u1>0</u1>
+<a1>Oliva-Urcia, B.</a1>
+<a1>Rahl, J.M.</a1>
+<a1>Schleicher, A.M.</a1>
+<a1>Parés, J.M.</a1>
+<t1>Correlation between the anisotropy of the magnetic susceptibility, strain and X-ray Texture Goniometry in phyllites from Crete, Greece</t1>
+<yr>2010</yr>
+<jf>Tectonophysics</jf>
+<t2></t2>
+<vo>486</vo>
+<is>4-Jan</is>
+<sp>120</sp>
+<op>131</op>
+<ab>A comparison of petrofabric and strain in phyllitic rocks from Crete, Greece has been undertaken using Anisotropy of Magnetic Susceptibility (AMS) at room and low temperature, the Projected Dimension Strain method (PDS), and X-ray Texture Goniometry (XTG) of phyllosilicates. The magnetic (at room and low temperature) and strain fabrics show similar orientations, with the minimum axes of the AMS ellipsoid coincident with the flattening direction of a pronounced solution mass-transfer deformation (SMT). The kmax axes of the AMS and the maximum stretching axis of the deformation overlap in the NNE-SSW direction, parallel to the axes of macroscopic folds. The quantitative relationship between the absolute values of strain and AMS is unclear. Nevertheless, a degree of correlation is found between the Woodcock diagram values of AMS and strain. Sx values discriminate better the clustered samples of kmax whereas the girdled samples of kmax are better differentiated with the Sz values. The stacking of the octahedral layers in micas correlates with Sx in the clustered kmax axes fabrics. The lack of a clear quantitative relationship is probably related to the generation of new phyllosilicates during folding and SMT deformation. © 2010 Elsevier B.V.</ab>
+<sn>00401951</sn>
+<do>10.1016/j.tecto.2010.02.013</do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn> </cn>
+<u4> </u4>
+</reference>
+<reference>
+<id>807</id>
+<u1>0</u1>
+<a1>Patch, W.</a1>
+<t1>The Catholic Church, the third reich, and the origins of the Cold War: On the utility and limitations of historical evidence</t1>
+<yr>2010</yr>
+<jf>Journal of Modern History</jf>
+<t2></t2>
+<vo>82</vo>
+<is>2</is>
+<sp>396</sp>
+<op>433</op>
+<ab> </ab>
+<sn>00222801</sn>
+<do>10.1086/651615</do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>808</id>
+<u1>0</u1>
+<a1>Pazyra-Murphy, M.F.</a1>
+<a1>Hans, A.</a1>
+<a1>Courchesne, S.L.</a1>
+<a1>Karch, C.</a1>
+<a1>Cosker, K.E.</a1>
+<a1>Heerssen, H.M.</a1>
+<a1>Watson, F.L.</a1>
+<a1>Kim, T.</a1>
+<a1>Greenberg, M.E.</a1>
+<a1>Segal, R.A.</a1>
+<t1>A retrograde neuronal survival response: Target-derived neurotrophins regulate MEF2D and bcl-w</t1>
+<yr>2009</yr>
+<jf>Journal of Neuroscience</jf>
+<t2></t2>
+<vo>29</vo>
+<is>20</is>
+<sp>6700</sp>
+<op>6709</op>
+<ab>Survival and maturation of dorsal root ganglia sensory neurons during development depend on target-derived neurotrophins. These target-derived signals must be transmitted across long distances to alter gene expression. Here, we address the possibility that long-range retrograde signals initiated by target-derived neurotrophins activate a specialized transcriptional program. The transcription factor MEF2D is expressed in sensory neurons</a1>
+<a1>we show that expression of this factor is induced in response to target-derived neurotrophins that stimulate the distal axons. We demonstrate that MEF2D regulates expression of an anti-apoptotic bcl-2 family member, bcl-w. Expression of mef2d and bcl-w is stimulated in response to activation of a Trk-dependent ERK5/MEF2 pathway, and our data indicate that this pathway promotes sensory neuron survival. We find that mef2d and bcl-w are members of a larger set of retrograde response genes, which are preferentially induced by neurotrophin stimulation of distal axons. Thus, activation of an ERK5/MEF2D transcriptional program establishes and maintains the cellular constituents of functional sensory circuits. Copyright © 2009 Society for Neuroscience.</ab>
+<sn>02706474</sn>
+<do>10.1523/JNEUROSCI.0233-09.2009</do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn> </cn>
+<u4> </u4>
+</reference>
+<reference>
+<id>809</id>
+<u1>0</u1>
+<a1>Perkins, W. Drew</a1>
+<a1>de Maria, Robert J.</a1>
+<a1>Reifenberger, Bill</a1>
+<a1>Hillgartner, Jim</a1>
+<t1>Lee: Beyond the Battles</t1>
+<yr>2009</yr>
+<jf></jf>
+<t2></t2>
+<vo></vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab>A look at Robert E. Lee as West Point cadet, soldier in the Mexican War, Civil War general, and finally as president of Washington College</ab>
+<sn></sn>
+<do> </do>
+<rt>Video/DVD</rt>
+<u3>Video/DVD</u3>
+<cn>E467.1.L4L457 2009</cn>
+<u4>b1715589</u4>
+</reference>
+<reference>
+<id>810</id>
+<u1>0</u1>
+<a1>Pickett, H.C.</a1>
+<t1>Dramatic nostalgia and spectacular conversion in Dekker and Massinger's the virgin martyr</t1>
+<yr>2009</yr>
+<jf>SEL - Studies in English Literature</jf>
+<t2></t2>
+<vo>49</vo>
+<is>2</is>
+<sp>437</sp>
+<op>462</op>
+<ab> </ab>
+<sn>00393657</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn> </cn>
+<u4> </u4>
+</reference>
+<reference>
+<id>813</id>
+<u1>0</u1>
+<a1>Schwab, F.</a1>
+<t1>Knock, knock: Is anyone there?</t1>
+<yr>2010</yr>
+<jf>Earth</jf>
+<t2></t2>
+<vo>55</vo>
+<is>6</is>
+<sp>88</sp>
+<op></op>
+<ab> </ab>
+<sn>1943345X</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>814</id>
+<u1>0</u1>
+<a1>Schwab, F.</a1>
+<t1>Busting myths: Global warming edition</t1>
+<yr>2010</yr>
+<jf>Earth</jf>
+<t2></t2>
+<vo>55</vo>
+<is>3</is>
+<sp>88</sp>
+<op></op>
+<ab> </ab>
+<sn>1943345X</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>815</id>
+<u1>0</u1>
+<a1>Schwab, F.</a1>
+<t1>Geologists are in the winner's circle</t1>
+<yr>2009</yr>
+<jf>Earth</jf>
+<t2></t2>
+<vo>54</vo>
+<is>11</is>
+<sp>88</sp>
+<op></op>
+<ab> </ab>
+<sn>1943345X</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>816</id>
+<u1>0</u1>
+<a1>Schwab, F.</a1>
+<t1>Second thoughts</t1>
+<yr>2009</yr>
+<jf>Earth</jf>
+<t2></t2>
+<vo>54</vo>
+<is>9</is>
+<sp>88</sp>
+<op></op>
+<ab> </ab>
+<sn>1943345X</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>817</id>
+<u1>0</u1>
+<a1>Schwab, F.</a1>
+<t1>Prediction is hard, especially about the future</t1>
+<yr>2009</yr>
+<jf>Earth</jf>
+<t2></t2>
+<vo>54</vo>
+<is>7</is>
+<sp>88</sp>
+<op></op>
+<ab> </ab>
+<sn>1943345X</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>818</id>
+<u1>0</u1>
+<a1>Schwab, F.</a1>
+<t1>Coprolites, sewage and us</t1>
+<yr>2009</yr>
+<jf>Earth</jf>
+<t2></t2>
+<vo>54</vo>
+<is>4</is>
+<sp>88</sp>
+<op></op>
+<ab> </ab>
+<sn>1943345X</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>819</id>
+<u1>0</u1>
+<a1>Schwab, F.</a1>
+<t1>Checking in green</t1>
+<yr>2009</yr>
+<jf>Earth</jf>
+<t2></t2>
+<vo>54</vo>
+<is>2</is>
+<sp>88</sp>
+<op></op>
+<ab>Leave them on the rack means we'll use them again ... Leave them on the floor means please replace. This vaguely sounds like a slogan left over from the Spanish Inquisition, but it is actually the typical message hotels and motels post these days encouraging guests to help the environment (and reduce the laundry bill). But green behavior in the lodging business can go way beyond reusing towels.</ab>
+<sn>1943345X</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>820</id>
+<u1>0</u1>
+<a1>Settle, F.A.</a1>
+<t1>Uranium to electricity: The chemistry of the nuclear fuel cycle</t1>
+<yr>2009</yr>
+<jf>Journal of chemical education</jf>
+<t2></t2>
+<vo>86</vo>
+<is>3</is>
+<sp>316</sp>
+<op>323</op>
+<ab> </ab>
+<sn>00219584</sn>
+<do>10.1021/ed086p316</do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn> </cn>
+<u4> </u4>
+</reference>
+<reference>
+<id>821</id>
+<u1>0</u1>
+<a1>Shay, J.P.</a1>
+<a1>Tracey, J.B.</a1>
+<t1>Expatriate adjustment and effectiveness: The mediating role of managerial practices</t1>
+<yr>2009</yr>
+<jf>Journal of International Management</jf>
+<t2></t2>
+<vo>15</vo>
+<is>4</is>
+<sp>401</sp>
+<op>412</op>
+<ab>The purpose of this study was to examine the mediating effects of relations-oriented managerial behaviors on the relationship between two modes of expatriate adjustment-role innovation and personal change-and contextual performance. Using data from 194 expatriates and 505 of their subordinates, we found evidence of full mediation for the role innovation-performance relationship. For ratings of expatriate effectiveness, recognizing and team building behaviors appear to fully mediate the role innovation-performance relationship. For ratings of supervisor satisfaction, inspiring, supporting, and team building appear to fully mediate the role innovation-performance relationship. No significant results were found for the personal change-performance relationship. The results provide insights for extending current models of the expatriate adjustment process, and understanding the means by which expatriates fulfill their responsibilities. © 2009 Elsevier Inc. All rights reserved.</ab>
+<sn>10754253</sn>
+<do>10.1016/j.intman.2008.12.007</do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn> </cn>
+<u4> </u4>
+</reference>
+<reference>
+<id>822</id>
+<u1>0</u1>
+<a1>Simpson, Pamela H.</a1>
+<t1>Modern patrons :donations of 20th century art to the university collections</t1>
+<yr>2009</yr>
+<jf> </jf>
+<t2></t2>
+<vo> </vo>
+<is> </is>
+<sp> </sp>
+<op> </op>
+<ab>...over the years, a number of generous alumni, parents and friends have given the University an impressive collection of paintings, sculpture, and prints from the modern period. The purpose of this exhibit is to highlight that work and the people who donated it.</ab>
+<sn> </sn>
+<do> </do>
+<rt>Book, Whole</rt>
+<u3>Book, Whole</u3>
+<cn> </cn>
+<u4>b1726962</u4>
+</reference>
+<reference>
+<id>823</id>
+<u1>0</u1>
+<a1>Smith, R.T.</a1>
+<t1>The Calaboose epistles: stories</t1>
+<yr>2009</yr>
+<jf></jf>
+<t2></t2>
+<vo></vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn>9781604542097</a1>
+<a1>1604542098</sn>
+<do> </do>
+<rt>Book, Whole</rt>
+<u3>Book, Whole</u3>
+<cn>PS3569.M537914C35 2009</cn>
+<u4>b1735811</u4>
+</reference>
+<reference>
+<id>824</id>
+<u1>0</u1>
+<a1>Stuart, Dabney</a1>
+<t1>Tables :poems</t1>
+<yr>2009</yr>
+<jf></jf>
+<t2></t2>
+<vo></vo>
+<is></is>
+<sp>85</sp>
+<op></op>
+<ab> </ab>
+<sn>9780982156117</a1>
+<a1>0982156111</sn>
+<do> </do>
+<rt>Book, Whole</rt>
+<u3>Book, Whole</u3>
+<cn>PS3569.T8T32 2009</cn>
+<u4>b1720421</u4>
+</reference>
+<reference>
+<id>825</id>
+<u1>0</u1>
+<a1>Sukow, D.W.</a1>
+<a1>Gavrielides, A.</a1>
+<a1>Erneux, T.</a1>
+<a1>Mooneyham, B.</a1>
+<a1>Lee, K.</a1>
+<a1>McKay, J.</a1>
+<a1>Davis, J.</a1>
+<t1>Asymmetric square waves in mutually coupled semiconductor lasers with orthogonal optical injection</t1>
+<yr>2010</yr>
+<jf>Physical Review E - Statistical, Nonlinear, and Soft Matter Physics</jf>
+<t2></t2>
+<vo>81</vo>
+<is>2</is>
+<sp> </sp>
+<op> </op>
+<ab>Two edge-emitting lasers mutually coupled through orthogonal optical injection exhibit square-wave oscillations in their polarization modes. The TE and TM modes within each individual laser are always in antiphase, but the TE mode of one laser leads the TM of the other by the one-way time of flight between lasers. The duty cycle of the square waves is tunable with pump current and coupling strength, while the total period remains close to the roundtrip time. Numerical simulations give similar results and reveal the role of noise in stabilizing the oscillations. © 2010 The American Physical Society.</ab>
+<sn>15393755</sn>
+<do>10.1103/PhysRevE.81.025206</do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn> </cn>
+<u4> </u4>
+</reference>
+<reference>
+<id>826</id>
+<u1>0</u1>
+<a1>Tsai, H.W.</a1>
+<a1>Chen, J.C.</a1>
+<a1>Yeh, K.Y.</a1>
+<a1>Tai, M.Y.</a1>
+<a1>Tsai, Y.F.</a1>
+<t1>Male sexual behavior and brain catecholamine levels in middle-aged rats</t1>
+<yr>2009</yr>
+<jf>Chinese Journal of Physiology</jf>
+<t2></t2>
+<vo>52</vo>
+<is>4</is>
+<sp>215</sp>
+<op>222</op>
+<ab>During aging, increased qualitative variations in copulatory behavior are observed in male rats. At the age of 18-19 months, only a small proportion of male rats (16%) still display the complete mating behavior, including mounts, intromissions, and ejaculations, but the rest of these middle-aged animals (84%) fail to exhibit one, two or all of the three behavioral components. With distinct behavioral phenotypes, the middle-aged male rats provide us a useful animal model to investigate the neuroendocrine mechanisms responsible for the age-related reduction in sexual behavior. We have previously elucidated the correlation between the loss of specific copulatory behavioral components and tissue levels of catecholamines in the medial preoptic area (MPOA), nucleus accumbens (NAc) and the bed nucleus of stria terminalis (BNST) of middle-aged male rats. Thus, our findings not only demonstrate that levels of dopamine and norepinephrine in the MPOA, NAc and BNST are critical for eliciting copulatory behavior, but also suggest that these two neurotransmitters play distinct roles in different brain regions to control specific behavioral components in male rats. ©2009 by The Chinese Physiological Society.</ab>
+<sn>03044920</sn>
+<do>10.4077/CJP.2009.AMK020</do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn> </cn>
+<u4> </u4>
+</reference>
+<reference>
+<id>827</id>
+<u1>0</u1>
+<a1>Velasquez, E.</a1>
+<t1>The great conflation</t1>
+<yr>2009</yr>
+<jf>Perspectives on Political Science</jf>
+<t2></t2>
+<vo>38</vo>
+<is>1</is>
+<sp>16</sp>
+<op>21</op>
+<ab>In response to the religious fanaticism spawned by the attempt to marry political philosophy and political theology, Mark Lilla admonishes us to return to the wisdom of Thomas Hobbes. The author of the Great Separation laid the ground for a humane political project by keeping separate the realms of God and man. In this article, I question the viability of Lilla's enterprise on Lilla's own terms. Hobbes, after all, did not set out to refute revelation. The author of Leviathan is the great subject changer who reorients human thinking toward a materialistic science of politics. However, if we are to contend with the challenges of political theology as Lilla understands them, we cannot in principle rule out the capacity of reason to speak to the claims of divine ascent. I propose a return to classical political rationalism as a better way of coming to terms with the theological-political problem.. Copyright © 2009 Heldref Publications.</ab>
+<sn>10457097</sn>
+<do>10.3200/PPSC.38.1.16-21</do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>828</id>
+<u1>0</u1>
+<a1>Velasquez, E.</a1>
+<t1>Religion and politics: Introduction to a symposium on mark lilla's the stillborn god</t1>
+<yr>2009</yr>
+<jf>Perspectives on Political Science</jf>
+<t2></t2>
+<vo>38</vo>
+<is>1</is>
+<sp>3</sp>
+<op>4</op>
+<ab> </ab>
+<sn>10457097</sn>
+<do>10.3200/PPSC.38.1.3-4</do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>829</id>
+<u1>0</u1>
+<a1>Vosbein, Terry</a1>
+<t1>[Collected works]</t1>
+<yr>2010</yr>
+<jf></jf>
+<t2></t2>
+<vo></vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn></sn>
+<do> </do>
+<rt>Music Score</rt>
+<u3>Music Score</u3>
+<cn>FACULTY PUBLICATIONS</cn>
+<u4>b1733657</u4>
+</reference>
+<reference>
+<id>830</id>
+<u1>0</u1>
+<a1>Vosbein, Terry</a1>
+<a1>Kenton, Stan</a1>
+<a1>Rugolo, Pete</a1>
+<a1>Graettinger, Robert</a1>
+<a1>Knoxville Jazz Orchestra</a1>
+<t1>Progressive jazz 2009</t1>
+<yr>2009</yr>
+<jf></jf>
+<t2></t2>
+<vo></vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn></sn>
+<do> </do>
+<rt>Sound Recording</rt>
+<u3>Sound Recording</u3>
+<cn>CDS 3988</cn>
+<u4>b1732836</u4>
+</reference>
+<reference>
+<id>831</id>
+<u1>0</u1>
+<a1>Warner, A.</a1>
+<a1>Jethwa, P.H.</a1>
+<a1>Wyse, C.A.</a1>
+<a1>I'Anson, H.</a1>
+<a1>Brameld, J.M.</a1>
+<a1>Ebling, F.J. P.</a1>
+<t1>Effects of photoperiod on daily locomotor activity, energy expenditure, and feeding behavior in a seasonal mammal</t1>
+<yr>2010</yr>
+<jf>American Journal of Physiology - Regulatory Integrative and Comparative Physiology</jf>
+<t2></t2>
+<vo>298</vo>
+<is>5</is>
+<sp> </sp>
+<op> </op>
+<ab>The objective of this study was to determine whether the previously observed effects of photoperiod on body weight in Siberian hamsters were due to changes in the daily patterns of locomotor activity, energy expenditure, and/or feeding behavior. Adult males were monitored through a seasonal cycle using an automated comprehensive laboratory animal monitoring system (CLAMS). Exposure to a short-day photoperiod (SD</a1>
+<a1>8:16-h light-dark cycle) induced a significant decline in body weight, and oxygen consumption (V̇O2), carbon dioxide production (V̇CO2), and heat production all decreased reaching a nadir by 16 wk of SD. Clear daily rhythms in locomotor activity, V̇O2, and V̇CO2 were observed at the start of the study, but these all progressively diminished after prolonged exposure to SD. Rhythms in feeding behavior were also detected initially, reflecting an increase in meal frequency but not duration during the dark phase. This rhythm was lost by 8 wk of SD exposure such that food intake was relatively constant across dark and light phases. After 18 wk in SD, hamsters were transferred to a long-day photoperiod (LD</a1>
+<a1>16:8-h light-dark cycle), which induced significant weight gain. This was associated with an increase in energy intake within 2 wk, while V̇O2, V̇CO2, and heat production all increased back to basal levels. Rhythmicity was reestablished within 4 wk of reexposure to long days. These results demonstrate that photoperiod impacts on body weight via complex changes in locomotor activity, energy expenditure, and feeding behavior, with a striking loss of daily rhythms during SD exposure. Copyright © 2010 the American Physiological Society.</ab>
+<sn>03636119</sn>
+<do>10.1152/ajpregu.00279.2009</do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn> </cn>
+<u4> </u4>
+</reference>
+<reference>
+<id>832</id>
+<u1>0</u1>
+<a1>Wheeler, Lesley</a1>
+<t1>Heathen</t1>
+<yr>2009</yr>
+<jf> </jf>
+<t2></t2>
+<vo> </vo>
+<is> </is>
+<sp>91</sp>
+<op> </op>
+<ab> </ab>
+<sn>9780981501093</a1>
+<a1>0981501095</sn>
+<do> </do>
+<rt>Book, Whole</rt>
+<u3>Book, Whole</u3>
+<cn>PS3623.H43H43 2009</cn>
+<u4>b1722782</u4>
+</reference>
+<reference>
+<id>833</id>
+<u1>0</u1>
+<a1>Adams, Edward</a1>
+<t1>Epic and Novel</t1>
+<yr>1998</yr>
+<jf></jf>
+<t2>The Encyclopedia of the Novel</t2>
+<vo>1</vo>
+<is></is>
+<sp>381</sp>
+<op></op>
+<ab> </ab>
+<sn>1579580157</sn>
+<do> </do>
+<rt>Book, Section</rt>
+<u3>Book, Section</u3>
+<cn></cn>
+<u4>1479491</u4>
+</reference>
+<reference>
+<id>834</id>
+<u1>0</u1>
+<a1>Ballenger, R.M.</a1>
+<a1>Garvis, D.M.</a1>
+<t1>Student Usage of Instructional Technologies: Differences in Online Learning Styles</t1>
+<yr>2010</yr>
+<jf>Information Systems Education Journal</jf>
+<t2></t2>
+<vo>8</vo>
+<is>51</is>
+<sp>1</sp>
+<op>19</op>
+<ab> </ab>
+<sn>1545-679X</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn> </cn>
+<u4> </u4>
+</reference>
+<reference>
+<id>835</id>
+<u1>0</u1>
+<a1>Ballenger, Robert M.</a1>
+<t1>An eCommerce Development Case: Your Company's eCommerce Web Site</t1>
+<yr>2007</yr>
+<jf>Journal of Information Systems Education</jf>
+<t2></t2>
+<vo>18</vo>
+<is>4</is>
+<sp>409</sp>
+<op>414</op>
+<ab>This case provides a real-world semester long project-oriented case study for students enrolled in an electronic commerce course that has a significant development component. The case provides the technical framework in the form of functional requirements for students to design and build a fully functional transaction processing e-commerce Web site over the course of a semester based on the company, products and/or services, content, and graphic images they choose. The case is divided into three assignments. The first assignment is a basic e-commerce Web site that emphasizes site layout, navigation, text formatting, inserting graphics, and the content necessary to market products and services online. Additional complexity is added in the second assignment, an enhanced e-commerce Web site. In this assignment students will create their own graphics images, menus, and image maps, use JavaScript to create image rollovers and image swaps, dynamically generate Web pages based on the contents of a database, and use a form to send data to an email address. The third assignment is a full-fledged transaction processing e-commerce Web site with a virtual shopping cart and checkout processing procedures. The case can to be used in a course where the students have little or no prior programming or relational database experience. The case was written so that the creation of the student's e-commerce Web site is not dependent upon the student's e-commerce development software, graphics tool set, Web server, Web programming environment, or relational database management system. Teaching notes containing suggested instructions, possible development environments, Web server configurations hints, individual assignment objectives, and a sample solution to the final assignment are provided. [ABSTRACT FROM AUTHOR]</a1>
+<a1>Copyright of Journal of Information Systems Education is the property of Journal of Information Systems Education and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)</ab>
+<sn>10553096</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn> </cn>
+<u4> </u4>
+</reference>
+<reference>
+<id>836</id>
+<u1>0</u1>
+<a1>Ballenger, Robert M.</a1>
+<t1>A database design and development case: Elk County Pediatric Medical Center</t1>
+<yr>2003</yr>
+<jf>Journal of Information Systems Education</jf>
+<t2></t2>
+<vo>14</vo>
+<is>3</is>
+<sp>275</sp>
+<op>284</op>
+<ab> </ab>
+<sn>1055-3096</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>837</id>
+<u1>0</u1>
+<a1>Bane, Doris M.</a1>
+<a1>Bane, Thomas A.</a1>
+<a1>Hinely, W.Patrick</a1>
+<t1>Family & honor</t1>
+<yr>2007</yr>
+<jf> </jf>
+<t2></t2>
+<vo> </vo>
+<is> </is>
+<sp>269</sp>
+<op> </op>
+<ab> </ab>
+<sn>9781934368039</a1>
+<a1>1934368032</sn>
+<do> </do>
+<rt>Book, Whole</rt>
+<u3>Book, Whole</u3>
+<cn>LD5871.8.B35 2007</cn>
+<u4>1674275</u4>
+</reference>
+<reference>
+<id>838</id>
+<u1>0</u1>
+<a1>Boylan, Scott J.</a1>
+<t1>Prior Audits and Taxpayer Compliance: Experimental Evidence on the Effect of Earned Versus Endowed Income</t1>
+<yr>2010</yr>
+<jf>Journal of the American Taxation Association</jf>
+<t2></t2>
+<vo>32</vo>
+<is>2</is>
+<sp>73</sp>
+<op>88</op>
+<ab> </ab>
+<sn>01989073</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>839</id>
+<u1>0</u1>
+<a1>Boylan, Scott J.</a1>
+<t1>A Classroom Exercise on Unconscious Bias in Financial Reporting and Auditing</t1>
+<yr>2008</yr>
+<jf>Issues in Accounting Education</jf>
+<t2></t2>
+<vo>23</vo>
+<is>2</is>
+<sp>229</sp>
+<op>245</op>
+<ab> </ab>
+<sn>07393172</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>840</id>
+<u1>0</u1>
+<a1>Braunschneider, Theresa</a1>
+<t1>The People that Things Make: Coquettes and Consumer Culture</t1>
+<yr>2008</yr>
+<jf></jf>
+<t2>Refiguring the Coquette</t2>
+<vo></vo>
+<is></is>
+<sp>39</sp>
+<op>61</op>
+<ab> </ab>
+<sn>0838757103</a1>
+<a1>978-0838757109</sn>
+<do> </do>
+<rt>Book, Section</rt>
+<u3>Book, Section</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>841</id>
+<u1>0</u1>
+<a1>Braunschneider, Theresa</a1>
+<t1>The Lady and the Lapdog: Mixed Ethnicity in Constantinople, Fashionable Pets in Britain</t1>
+<yr>2006</yr>
+<jf></jf>
+<t2>Humans and Other Animals in Eighteenth-Century British Culture: Representation, Hybridity, Ethics</t2>
+<vo></vo>
+<is></is>
+<sp>31</sp>
+<op></op>
+<ab> </ab>
+<sn>0754654753</a1>
+<a1>978-0754654759</sn>
+<do> </do>
+<rt>Book, Section</rt>
+<u3>Book, Section</u3>
+<cn>PR 448. A55 H86 2006</cn>
+<u4>b17899680</u4>
+</reference>
+<reference>
+<id>842</id>
+<u1>0</u1>
+<a1>Conner, Marc</a1>
+<t1>The Whiteness of Blackness: The Bonfire of the Vanities and African-American Politics</t1>
+<yr>2007</yr>
+<jf>Shenandoah</jf>
+<t2></t2>
+<vo>57</vo>
+<is>1</is>
+<sp>166</sp>
+<op>167-186</op>
+<ab> </ab>
+<sn>0037-3583</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>843</id>
+<u1>0</u1>
+<a1>Conner, Marc</a1>
+<t1>The Specter of History: Filming Memory in Beloved</t1>
+<yr>2007</yr>
+<jf></jf>
+<t2>Twentieth-Century American Fiction on Screen</t2>
+<vo></vo>
+<is></is>
+<sp>202</sp>
+<op>216</op>
+<ab> </ab>
+<sn>0521834449</a1>
+<a1>978-0521834445</sn>
+<do> </do>
+<rt>Book, Section</rt>
+<u3>Book, Section</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>844</id>
+<u1>0</u1>
+<a1>Conner, Marc</a1>
+<t1>The Litany of Things: Sacrament and History in Invisible Man</t1>
+<yr>2004</yr>
+<jf></jf>
+<t2>Ralph Ellison and the raft of hope : a political companion to Invisible man</t2>
+<vo></vo>
+<is></is>
+<sp>171</sp>
+<op>172-192</op>
+<ab> </ab>
+<sn>0813123127</a1>
+<a1>978-0813123127</sn>
+<do> </do>
+<rt>Book, Section</rt>
+<u3>Book, Section</u3>
+<cn></cn>
+<u4>1604303</u4>
+</reference>
+<reference>
+<id>845</id>
+<u1>0</u1>
+<a1>Conner, Marc</a1>
+<t1>Fathers and Sons: Winesburg, Ohio and the Revision of Modernism</t1>
+<yr>2001</yr>
+<jf>Studies in American Fiction</jf>
+<t2></t2>
+<vo>29</vo>
+<is>2</is>
+<sp>209</sp>
+<op>238</op>
+<ab> </ab>
+<sn>0091-8083</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>846</id>
+<u1>0</u1>
+<a1>Craun, Edwin D.</a1>
+<t1>It is a Freletee of Flessh: Excuses for Sin, Pastoral Rhetoric, and Moral Agency</t1>
+<yr>2007</yr>
+<jf></jf>
+<t2>In the garden of evil: the vices and culture in the Middle Ages</t2>
+<vo></vo>
+<is></is>
+<sp>33</sp>
+<op>60</op>
+<ab> </ab>
+<sn>088844818X</sn>
+<do> </do>
+<rt>Book, Section</rt>
+<u3>Book, Section</u3>
+<cn></cn>
+<u4>1638437</u4>
+</reference>
+<reference>
+<id>847</id>
+<u1>0</u1>
+<a1>Craun, Edwin D.</a1>
+<t1>Lewte and the Practice of Fraternal Correction</t1>
+<yr>2001</yr>
+<jf>Yearbook of Langland Studies</jf>
+<t2></t2>
+<vo>15</vo>
+<is></is>
+<sp>15</sp>
+<op>15-25</op>
+<ab> </ab>
+<sn>0890-2917</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>848</id>
+<u1>0</u1>
+<a1>Darznik, Jasmin</a1>
+<t1>My Mother, Her Secrets</t1>
+<yr>2010</yr>
+<jf>NY Times</jf>
+<t2></t2>
+<vo>May</vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn>0362-4331</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>849</id>
+<u1>0</u1>
+<a1>Darznik, Jasmin</a1>
+<t1>Forough Goes West: The Legacy of Forough Farrokhzad in Iranian Diasporic Art and Literature</t1>
+<yr>2010</yr>
+<jf>The Journal of Middle Eastern Women's Studies</jf>
+<t2></t2>
+<vo>Winter</vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn>1558-9579</a1>
+<a1>1552-5864</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>850</id>
+<u1>0</u1>
+<a1>Darznik, Jasmin</a1>
+<t1>Avenue Monireyeh</t1>
+<yr>2009</yr>
+<jf>Cimarron Review</jf>
+<t2></t2>
+<vo>Winter</vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn>0009-6849</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>851</id>
+<u1>0</u1>
+<a1>Gavaler, Chris</a1>
+<t1>Almost Africa</t1>
+<yr>2010</yr>
+<jf>Saranac Review</jf>
+<t2></t2>
+<vo>5</vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn>1556-1119</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>852</id>
+<u1>0</u1>
+<a1>Gavaler, Chris</a1>
+<t1>Vows</t1>
+<yr>2009</yr>
+<jf>Pittsburgh New Works Festival</jf>
+<t2></t2>
+<vo>Oct. 1</vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn></sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>853</id>
+<u1>0</u1>
+<a1>Gavaler, Chris</a1>
+<t1>Waiting for You</t1>
+<yr>2009</yr>
+<jf>roger</jf>
+<t2></t2>
+<vo>4</vo>
+<is>Spring</is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn>1937-0202</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>854</id>
+<u1>0</u1>
+<a1>Gavaler, Chris</a1>
+<t1>G.O.D.</t1>
+<yr>2009</yr>
+<jf>The Hudson Review</jf>
+<t2></t2>
+<vo>LXII</vo>
+<is>1</is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn>0018-702X</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>855</id>
+<u1>0</u1>
+<a1>Gavaler, Chris</a1>
+<t1>Identical</t1>
+<yr>2009</yr>
+<jf>Potomac Review</jf>
+<t2></t2>
+<vo>45</vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn>1073-1989</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>856</id>
+<u1>0</u1>
+<a1>Gavaler, Chris</a1>
+<t1>NAME ____________________</t1>
+<yr>2009</yr>
+<jf>Pank</jf>
+<t2></t2>
+<vo>3</vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn>1935-7133</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>857</id>
+<u1>0</u1>
+<a1>Gavaler, Chris</a1>
+<t1>The First Documentary</t1>
+<yr>2009</yr>
+<jf>Witness</jf>
+<t2></t2>
+<vo>XXII</vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn>0891-1371</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>858</id>
+<u1>0</u1>
+<a1>Gavaler, Chris</a1>
+<t1>The Tragedy of John Wilkes Booth by William Shakespeare</t1>
+<yr>2009</yr>
+<jf>Harriett Lake Festival of New Plays</jf>
+<t2></t2>
+<vo>January</vo>
+<is> </is>
+<sp> </sp>
+<op> </op>
+<ab> </ab>
+<sn> </sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn> </cn>
+<u4> </u4>
+</reference>
+<reference>
+<id>859</id>
+<u1>0</u1>
+<a1>Gavaler, Chris</a1>
+<t1>Angie</t1>
+<yr>2009</yr>
+<jf>The Body Beautiful</jf>
+<t2></t2>
+<vo>January 21-25</vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn></sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>860</id>
+<u1>0</u1>
+<a1>Gavaler, Chris</a1>
+<t1>Cell Phone</t1>
+<yr>2008</yr>
+<jf>WOMENSCENE</jf>
+<t2></t2>
+<vo>May 15 - 17</vo>
+<is> </is>
+<sp> </sp>
+<op> </op>
+<ab> </ab>
+<sn> </sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn> </cn>
+<u4> </u4>
+</reference>
+<reference>
+<id>861</id>
+<u1>0</u1>
+<a1>Gavaler, Chris</a1>
+<t1>Sixteen</t1>
+<yr>2008</yr>
+<jf>Short Story</jf>
+<t2></t2>
+<vo>5</vo>
+<is>Fall</is>
+<sp> </sp>
+<op> </op>
+<ab> </ab>
+<sn> </sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn> </cn>
+<u4> </u4>
+</reference>
+<reference>
+<id>862</id>
+<u1>0</u1>
+<a1>Gavaler, Chris</a1>
+<t1>Man, Woman, Hombre, Mujer;</t1>
+<yr>2008</yr>
+<jf>Pittsburgh New Works Festival</jf>
+<t2></t2>
+<vo>September</vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn></sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>863</id>
+<u1>0</u1>
+<a1>Gavaler, Chris</a1>
+<t1>Tax Information for Parents of Kidnapped Children</t1>
+<yr>2008</yr>
+<jf>Phoebe</jf>
+<t2></t2>
+<vo>Fall</vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn>0270-868X</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>864</id>
+<u1>0</u1>
+<a1>Gavaler, Chris</a1>
+<t1>The Chris and Alex Show</t1>
+<yr>2008</yr>
+<jf>Third Coast</jf>
+<t2></t2>
+<vo>26</vo>
+<is>Spring</is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn>1520-8206</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>865</id>
+<u1>0</u1>
+<a1>Gavaler, Chris</a1>
+<t1>Truth</t1>
+<yr>2008</yr>
+<jf>American Literary Review</jf>
+<t2></t2>
+<vo>Spring</vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn>1051-5062</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>866</id>
+<u1>0</u1>
+<a1>Gavaler, Chris</a1>
+<t1>Regrets</t1>
+<yr>2008</yr>
+<jf>Beloit Fiction Journal</jf>
+<t2></t2>
+<vo>21</vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn>0883-9131</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>867</id>
+<u1>0</u1>
+<a1>Gavaler, Chris</a1>
+<t1>The Bones</t1>
+<yr>2008</yr>
+<jf>Prairie Schooner</jf>
+<t2></t2>
+<vo>82</vo>
+<is>1</is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn>0032-6682</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>868</id>
+<u1>0</u1>
+<a1>Gavaler, Chris</a1>
+<t1>Sylvester Long</t1>
+<yr>2008</yr>
+<jf>African American National Biography</jf>
+<t2></t2>
+<vo>January</vo>
+<is> </is>
+<sp> </sp>
+<op> </op>
+<ab> </ab>
+<sn> </sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn> </cn>
+<u4> </u4>
+</reference>
+<reference>
+<id>869</id>
+<u1>0</u1>
+<a1>Gavaler, Chris</a1>
+<t1>Recipe for Giblets</t1>
+<yr>2007</yr>
+<jf>Crab Orchard Review</jf>
+<t2></t2>
+<vo>12</vo>
+<is>2</is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn>1083-5571</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>870</id>
+<u1>0</u1>
+<a1>Gavaler, Chris</a1>
+<t1>Bury the Survivors</t1>
+<yr>2007</yr>
+<jf>Minnesota Review</jf>
+<t2></t2>
+<vo>68</vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn>0026-5667</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>871</id>
+<u1>0</u1>
+<a1>Gertz, Genelle</a1>
+<t1>Stepping into the Pulpit? Womens' Preaching in the Book of Margery Kempe and the Examinations of Anne Askew</t1>
+<yr>2005</yr>
+<jf></jf>
+<t2>Voices in dialogue : reading women in the Middle Ages</t2>
+<vo></vo>
+<is></is>
+<sp>459</sp>
+<op>460-482</op>
+<ab> </ab>
+<sn>0268037175</sn>
+<do> </do>
+<rt>Book, Section</rt>
+<u3>Book, Section</u3>
+<cn></cn>
+<u4>1630102</u4>
+</reference>
+<reference>
+<id>872</id>
+<u1>0</u1>
+<a1>Gertz, Genelle</a1>
+<t1>Anne Askew</a1>
+<a1>Anna Julia Cooper, Eleanor Davies, Esther Sowernam, Ida B. Wells</t1>
+<yr>1999</yr>
+<jf></jf>
+<t2>The Cambridge guide to women's writing in English</t2>
+<vo></vo>
+<is></is>
+<sp>23</sp>
+<op></op>
+<ab> </ab>
+<sn>0521495253</a1>
+<a1>0521668131</sn>
+<do> </do>
+<rt>Book, Section</rt>
+<u3>Book, Section</u3>
+<cn></cn>
+<u4>1505798</u4>
+</reference>
+<reference>
+<id>873</id>
+<u1>0</u1>
+<a1>Goldberg, Nathaniel</a1>
+<t1>Response-Dependence, Noumenalism, and Ontological Mystery</t1>
+<yr>2009</yr>
+<jf>European Journal of Philosophy</jf>
+<t2></t2>
+<vo>17</vo>
+<is></is>
+<sp>469</sp>
+<op></op>
+<ab> </ab>
+<sn>0966-8373</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>874</id>
+<u1>0</u1>
+<a1>Goldberg, Nathaniel</a1>
+<t1>Universal and Relative Rationality</t1>
+<yr>2009</yr>
+<jf>Principia</jf>
+<t2></t2>
+<vo>13</vo>
+<is></is>
+<sp>67</sp>
+<op></op>
+<ab> </ab>
+<sn>1808-1711</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>875</id>
+<u1>0</u1>
+<a1>Green, Leah</a1>
+<t1>Becoming Sisters</t1>
+<yr>2009</yr>
+<jf>Squaw Valley Review</jf>
+<t2></t2>
+<vo>2009</vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn></sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>876</id>
+<u1>0</u1>
+<a1>Green, Leah</a1>
+<t1>Almanac</t1>
+<yr>2009</yr>
+<jf>Squaw Valley Review</jf>
+<t2></t2>
+<vo>2009</vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn></sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>877</id>
+<u1>0</u1>
+<a1>Gregory, Paul</a1>
+<t1>On Teaching ‘Science, Nature, Self, and Culture’</t1>
+<yr>2009</yr>
+<jf>On the Human Forum</jf>
+<t2></t2>
+<vo></vo>
+<is></is>
+<sp></sp>
+<op></op>
+<lk>http://onthehuman.org/teaching/on-teaching-science-nature-self-and-culture/</lk>
+<ab> </ab>
+<sn></sn>
+<do> </do>
+<rt>Web Page</rt>
+<u3>Online Discussion Forum/Blogs</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>879</id>
+<u1>0</u1>
+<a1>Henry-Stone, Laura</a1>
+<t1>Cultivating Sustainability Pedagogy through Participatory Action Research in Interior Alaska</t1>
+<yr>2010</yr>
+<jf>Journal of Sustainability Education</jf>
+<t2></t2>
+<vo>May</vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn>2151 7452</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>880</id>
+<u1>0</u1>
+<a1>Hoover, Scott</a1>
+<t1>Stock Valuation: An Essential Guide to Wall Street's Most Popular Valuation Models</t1>
+<yr>2005</yr>
+<jf></jf>
+<t2></t2>
+<vo></vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn>0071452249</a1>
+<a1>9780071452243</sn>
+<do> </do>
+<rt>Book, Whole</rt>
+<u3>Book, Whole</u3>
+<cn></cn>
+<u4>1761840</u4>
+</reference>
+<reference>
+<id>881</id>
+<u1>0</u1>
+<a1>Jirsa, Curtis</a1>
+<t1>In the Shadow of the Ympe-tre: Arboreal Folklore in Sir Orfeo</t1>
+<yr>2008</yr>
+<jf>English Studies</jf>
+<t2></t2>
+<vo>89</vo>
+<is>2</is>
+<sp>141</sp>
+<op></op>
+<ab> </ab>
+<sn>0013-838X</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>882</id>
+<u1>0</u1>
+<a1>Keen, Suzanne</a1>
+<t1>Narrative Empathy</t1>
+<yr>2010</yr>
+<jf></jf>
+<t2>Toward a Cognitive Theory of Narrative Acts</t2>
+<vo></vo>
+<is></is>
+<sp>61</sp>
+<op>93</op>
+<ab> </ab>
+<sn>0292721579</a1>
+<a1>978-0292721579</sn>
+<do> </do>
+<rt>Book, Section</rt>
+<u3>Book, Section</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>883</id>
+<u1>0</u1>
+<a1>Keen, Suzanne</a1>
+<t1>Victorian Renovations of the Novel: Narrative Annexes and the Boundaries of Representation</t1>
+<yr>1998</yr>
+<jf></jf>
+<t2></t2>
+<vo></vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn>0521583446</sn>
+<do> </do>
+<rt>Book, Whole</rt>
+<u3>Book, Whole</u3>
+<cn></cn>
+<u4>1451501</u4>
+</reference>
+<reference>
+<id>884</id>
+<u1>0</u1>
+<a1>Lowney, Charles</a1>
+<t1>Morality: Emergentist Ethics and Virtue For Itself</t1>
+<yr>2010</yr>
+<jf>Tradition and Discovery</jf>
+<t2></t2>
+<vo>36</vo>
+<is>3</is>
+<sp>52</sp>
+<op></op>
+<ab> </ab>
+<sn>1057-1027</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>885</id>
+<u1>0</u1>
+<a1>Lowney, Charles</a1>
+<t1>From Morality to Spirituality: Society, Religion and Transformation</t1>
+<yr>2010</yr>
+<jf>Tradition and Discovery</jf>
+<t2></t2>
+<vo>37</vo>
+<is>1</is>
+<sp>19</sp>
+<op></op>
+<ab> </ab>
+<sn>1057-1027</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>886</id>
+<u1>0</u1>
+<a1>Lowney, Charles</a1>
+<t1>From Science to Morality: A Polanyian Perspective on the Letter and the Spirit of the Law</t1>
+<yr>2009</yr>
+<jf>Tradition and Discovery</jf>
+<t2></t2>
+<vo>36</vo>
+<is>1</is>
+<sp>42</sp>
+<op></op>
+<ab> </ab>
+<sn>1057-1027</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>887</id>
+<u1>0</u1>
+<a1>Lowney, Charles</a1>
+<t1>Authenticity and the Reconciliation of Modernity</t1>
+<yr>2009</yr>
+<jf>The Pluralist</jf>
+<t2></t2>
+<vo>4</vo>
+<is>1</is>
+<sp>33</sp>
+<op></op>
+<ab> </ab>
+<sn>1930-7365</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>888</id>
+<u1>0</u1>
+<a1>Lowney, Charles</a1>
+<t1>The Tacit in Frege</t1>
+<yr>2008</yr>
+<jf>Polanyiana</jf>
+<t2></t2>
+<vo>17</vo>
+<is>2-Jan</is>
+<sp>19</sp>
+<op></op>
+<ab> </ab>
+<sn>1215-6582</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>889</id>
+<u1>0</u1>
+<a1>Lowney, Charles</a1>
+<t1>Seeing, Saying and Being the Gestalt</t1>
+<yr>2008</yr>
+<jf>Appraisal</jf>
+<t2></t2>
+<vo>7</vo>
+<is>1</is>
+<sp>21</sp>
+<op></op>
+<ab> </ab>
+<sn>1358-3336</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>890</id>
+<u1>0</u1>
+<a1>Lowney, Charles</a1>
+<t1>What I Learned the Day I Was Not a Philosopher</t1>
+<yr>2007</yr>
+<jf>Practical Philosophy</jf>
+<t2></t2>
+<vo>8</vo>
+<is>2</is>
+<sp>18</sp>
+<op></op>
+<ab> </ab>
+<sn>1363-3228</sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>891</id>
+<u1>0</u1>
+<a1>Lubin, Tim</a1>
+<t1>Brahmana as Commentary</t1>
+<yr>2010</yr>
+<jf></jf>
+<t2>Forms and Uses of the Commentary in the Indian World</t2>
+<vo></vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn></sn>
+<do> </do>
+<rt>Book, Section</rt>
+<u3>Book, Section</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>892</id>
+<u1>0</u1>
+<a1>Lubin, Tim</a1>
+<t1>Ritual Self-Discipline as a Response to the Human Condition:  Toward a Semiotics of Ritual Indices</t1>
+<yr>2010</yr>
+<jf></jf>
+<t2>Ritual Dynamics and the Science of Ritual: I: Grammars and Morphologies of Ritual Practices in Asia</t2>
+<vo></vo>
+<is></is>
+<sp>271</sp>
+<op></op>
+<ab> </ab>
+<sn>3447062010</sn>
+<do> </do>
+<rt>Book, Section</rt>
+<u3>Book, Section</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>893</id>
+<u1>0</u1>
+<a1>Lubin, Tim</a1>
+<t1>Adhikara</t1>
+<yr>2010</yr>
+<jf></jf>
+<t2>Brill's Encyclopedia of Hinduism</t2>
+<vo>II</vo>
+<is></is>
+<sp>671</sp>
+<op></op>
+<ab> </ab>
+<sn></sn>
+<do> </do>
+<rt>Book, Section</rt>
+<u3>Book, Section</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>894</id>
+<u1>0</u1>
+<a1>Lubin, Tim</a1>
+<t1>Oxford Bibliographies Online: Hinduism</t1>
+<yr>2010</yr>
+<jf></jf>
+<t2></t2>
+<vo></vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn></sn>
+<do> </do>
+<rt>Web Page</rt>
+<u3>Web Page</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>895</id>
+<u1>0</u1>
+<a1>Lubin, Tim</a1>
+<t1>Artha and Arthasastra</t1>
+<yr>2010</yr>
+<jf>Oxford Bibliographies Online: Hinduism</jf>
+<t2></t2>
+<vo></vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn></sn>
+<do> </do>
+<rt>Web Page</rt>
+<u3>Web Page</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>896</id>
+<u1>0</u1>
+<a1>Lubin, Tim</a1>
+<t1>Asramas</t1>
+<yr>2010</yr>
+<jf>Oxford Bibliographies Online: Hinduism</jf>
+<t2></t2>
+<vo></vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn></sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>897</id>
+<u1>0</u1>
+<a1>Lubin, Tim</a1>
+<t1>Grhya Rites</t1>
+<yr>2010</yr>
+<jf>Oxford Bibliographies Online: Hinduism</jf>
+<t2></t2>
+<vo></vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn></sn>
+<do> </do>
+<rt>Journal Article</rt>
+<u3>Journal Article</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>898</id>
+<u1>0</u1>
+<a1>Lubin, Tim</a1>
+<t1>Review of the book Beyond Sacred Violence: A Comparative Study of Sacrifice, by K. McClymond</t1>
+<yr>2010</yr>
+<jf>Numen: International Review for the History of Religions</jf>
+<t2></t2>
+<vo>57</vo>
+<is></is>
+<sp>539</sp>
+<op>541</op>
+<ab> </ab>
+<sn>0029-5973</sn>
+<do> 10.1163/156852710X501388</do>
+<rt>Journal Article</rt>
+<u3>Review</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>899</id>
+<u1>0</u1>
+<a1>Lubin, Tim</a1>
+<t1>Review of the book Text and Authority in the Older Upanishads, by S. Cohen</t1>
+<yr>2009</yr>
+<jf>Journal of Asian Studies</jf>
+<t2></t2>
+<vo>68</vo>
+<is>4</is>
+<sp>1329</sp>
+<op>1331</op>
+<ab> </ab>
+<sn>0021-9118</sn>
+<do> http://dx.doi.org/10.1017/S0021911809991422 </do>
+<rt>Journal Article</rt>
+<u3>Review</u3>
+<cn></cn>
+<u4></u4>
+</reference>
+<reference>
+<id>900</id>
+<u1>0</u1>
+<a1>Lubin, Tim</a1>
+<a1>Davis, D.R.</a1>
+<a1>Krishnan, Jayanth</a1>
+<t1>Hinduism and law:an introduction</t1>
+<yr>2010</yr>
+<jf></jf>
+<t2></t2>
+<vo></vo>
+<is></is>
+<sp></sp>
+<op></op>
+<ab> </ab>
+<sn>9780521887861</sn>
+<do> </do>
+<rt>Book, Whole</rt>
+<u3>Book, Whole</u3>
+<cn></cn>
+<u4>1761841</u4>
+</reference>
+
+</refworks>

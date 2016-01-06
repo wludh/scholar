@@ -1,0 +1,32 @@
+- include_stylesheet('specific/groups/show')
+
+- if current_user_role?("editor", @group)
+  = render :layout => 'layouts/admin_bar' do
+    %li= link_to t('groups.show.add'), new_group_path
+    %li= link_to t('groups.show.edit'), edit_group_path
+    %li= link_to t('groups.show.roles'), group_roles_path(@group)
+
+= render :layout => 'layouts/main_body', :locals => {:header => body_header(@group)} do
+  = render "shared/local_nav", :object => "group"
+
+.col-xs-8.prepend-1
+  = render "shared/people", :count => 15, :randomize => true
+
+  .col-xs-12
+    %h3.heading #{t('app.description')}
+    %p= @group.description
+    - if @group.url.present?
+      %p= link_to h(@group.url), @group.canonicalize_url
+
+    .col-xs-6
+      = render "shared/publications", :count => 10
+
+    .col-xs-6
+      = render "shared/publishers", :count => 10
+
+
+.col-xs-4.last
+  = render :partial => 'related_groups_box', :layout => 'layouts/right_box_no_border'
+  = render :partial => 'work_types_box', :layout => 'layouts/right_box_no_border'
+  = render :partial => "shared/keyword_cloud", :layout => 'layouts/right_box_no_border', :locals => {:keywords => @keywords, :id => 'tagcloud'}
+  = render :partial => 'recent_works_box', :layout => 'layouts/right_box_no_border'

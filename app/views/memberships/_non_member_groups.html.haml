@@ -1,0 +1,9 @@
+- if @query.present?
+  %h3
+    #{t '.searching_for'}
+    = @query
+    = link_to fugue_icon_tag('cross-button'), new_person_membership_path(:person_id => @person.id, :status => "non_member")
+- if @groups.length < 1
+  %p #{t '.no_groups'}
+- else
+  = render 'join_groups_form'

@@ -1,0 +1,22 @@
+===== In Ihrer BibApp Instanz ist ein Fehler aufgetreten! ====
+
+* Ausnahme
+
+<%= @exception.inspect %>
+
+* Ablauf
+
+<%= @clean_backtrace.join("\n") %>
+
+* Parameter
+
+<%= @params.inspect %>
+
+* Sitzung
+
+<%= @session.inspect %>
+
+* Request-Umgebung
+
+<%= @request_env.inspect %>
+

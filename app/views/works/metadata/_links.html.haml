@@ -1,0 +1,8 @@
+- unless @work.links.blank?
+  %tr
+    %td.metalabel #{t 'works.metadata.links.label'}:
+    %td
+      -#to keep long, unbroken URLS from expanding the table
+      .col-xs-6.work-link
+        - split_potential_links(@work).each do |link|
+          %p #{link_potential_link(link)}

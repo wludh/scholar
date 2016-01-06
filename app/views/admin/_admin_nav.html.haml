@@ -1,0 +1,9 @@
+#admin-nav
+  %ul
+    %li{give_current_class_if_equal('works', @tab_name)}= link_to Work.model_name.human_pl, admin_index_path(:tab => "works")
+    %li{give_current_class_if_equal('groups', @tab_name)}= link_to Group.model_name.human_pl, admin_index_path(:tab => "groups")
+    %li{give_current_class_if_equal('people', @tab_name)}= link_to Person.model_name.human_pl, admin_index_path(:tab => "people")
+    %li{give_current_class_if_equal('publications', @tab_name)}= link_to Publication.model_name.human_pl, admin_index_path(:tab => "publications")
+    %li{give_current_class_if_equal('publishers', @tab_name)}= link_to Publisher.model_name.human_pl, admin_index_path(:tab => "publishers")
+    %li{give_current_class_if_equal('users', @tab_name)}= link_to User.model_name.human_pl, admin_index_path(:tab => "users")
+

@@ -1,0 +1,5 @@
+- include_stylesheet('specific/shared/_person_image')
+- if !o.image_url?
+  = image_tag(o.image_url, :class => 'person-image')
+- else
+  = image_tag("chucks.jpg", :class => 'person-image')

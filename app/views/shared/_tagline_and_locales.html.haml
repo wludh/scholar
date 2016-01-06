@@ -1,0 +1,10 @@
+- if I18n.available_locales.many?
+  .col-xs-7
+    %p#tagline #{t('personalize.application_tagline')}
+  .col-xs-3.last
+    %ul#locale-picker.header-nav
+      - I18n.available_locales.each do |locale|
+        %li= link_to_unless(locale.to_sym == params[:locale].try(:to_sym), t('i18n.language.name', :locale => locale), url_for(params.merge(:locale => locale)))
+- else
+  .col-xs-12
+    %p#tagline #{t('personalize.application_tagline')}

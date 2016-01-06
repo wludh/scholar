@@ -1,0 +1,201 @@
+2.0.1 - April 15, 2013
+-------------
+Fix some migrations for new ruby/rails versions
+Don't use observers when running migrations
+Fix CSV import
+
+2.0.0 - April 2, 2013
+-------------
+Removed some unused gems
+Update ruby to 1.9.3
+Update rails to 3.2
+Replace ISBN_tools gem with lisbn
+Use current version of paperclip
+Configure mailing in environment initializer
+Remove tolk (hopefully) temporarily - Bibapp still needs work to get
+	the current version to work
+Fix deprecations
+Move vendor/plugins code to lib (vendor/plugins is now deprecated)
+Update omniauth
+Workaround encoding issue
+
+1.2.3 - April 2, 2013
+--------------
+Track .rvmrc in git
+Add some database indexes
+Update Rails version for security fixes
+Make sure newly created work is indexed
+Pin version of delayed_job_active_record (for Postgres 8.4 compatibility)
+Fix imports with repeated author
+
+1.2.2 - June 22, 2012
+--------------
+make_resourceful is now available as a gem instead of a plugin, so use it that way (also include backports gem for older rubies)
+paperclip is now used in preference to attachment_fu
+start some experimentation with caching
+fix bugs around saved works
+Remove PublisherSource class and related. It did nothing. Retain publisher_source_id in Publisher (at least for now).
+Replace REXML and Hpricot XML parsing with Nokogiri, except for the citeproc vendored gem.
+Removed parser for deprecated Refworks format (this can be resurrected if truly needed, but I don't really want to support it)
+In PeopleController#show add icon link to take a user to shared works with co-author
+Add view to show works shared between authors.
+Use 'proper_works' (i.e. ActiveRecord Works) directly in some places that used to convert them to solr
+Add rake task to delete old sessions to keep the sessions table cleaner
+Fix bug with timeline view
+Update rails version to 3.0.15
+Update tolk version to 1.0.1 (bugfix)
+Fix occasional error in how groups found their associated works
+
+1.2.1 - February 28, 2012
+--------------
+Remove ruby-net-ldap gem in favor of net-ldap
+Update aasm gem
+Update Solr to 3.5
+Use rails-18n gem to get "Rails" translations
+Use sword2ruby to handle sword interaction (note that we still only support
+Sword 1 servers, though the basic machinery is in place for Sword 2).
+Change autocompletion to jQueryUI from plugin
+Remove legacy prototype javascript in favor of jQuery, including removal of prototype_legacy_helper plugin
+Remove dead code for merging works
+Update delayed_job to 3.0 - requires migration
+Allow rdf request to works#index to supply rows parameter
+Use Rails.env in place of ENV['RAILS_ENV'] which was causing at least one bug
+Bug fixes
+Change a bit about how delayed_job is started. Can now run in different environments simultaneously and has env info in process name
+Use _html suffix in I18n keys to denote html strings (which are automatically html safe)
+Use loofah/loofah-activerecord to sanitize some fields directly in database, allowing html to be used in views as appropriate.
+Add simple support for removing stopwords from consideration for sorting/bucketing of certain titles/names.
+
+1.2.0 - December 7, 2011
+--------------
+Bumped Rails version up to 3.0.10, updated gems accordingly.
+Fix a problem with assigning/deleting roles through the GUI.
+Make assignment/deletion of roles for explicit roles - don't consider (but do note) cascading for this.
+Only show header for external credential login when such a method is actually used.
+Fix bug after will_paginate 3.0.0 upgrade
+Prevent a possible infinite loop after saving a contributorship from even being possible
+View refactoring - internal layouts, relocation of logic to helpers, more use of partials, etc.
+Internationalization
+Make romeo color selection use a select box
+Split publication_date into parts for year/month/day, allowing less information to be specified (e.g. just the year)
+
+1.1.2 - September 1, 2011
+--------------
+Fix bug in Person#set_pen_names
+Add spec test to cover bug
+Make method instance instead of class to fix bug
+Convert XML generating views to Builder from Haml
+Fix bug and speed up finding works from a group
+Fix HTML escaping problem for viewing lists of works in alternate bibliographic formats
+Some tables are now javascript enabled
+Fix security issue around password reset.
+
+1.1.1 - August 3, 2011
+--------------
+Fix bug for importing - missing require
+
+1.1.0 - July 29, 2011
+--------------
+-THERE ARE SOME NEW MIGRATIONS - don't forget to migrate your database
+-Abstract LDAP pieces into their own module
+-Fix some importing problems
+-Some fixes around authentication and log in procedure, etc.
+-Remove most inline styles and use CSS instead
+-General cleanup of view code
+-Remove most inline javascript - move to separate files and include as needed
+-Introduce jQuery for javascript (note - some old Prototype stuff is still
+there)
+-Redid some views that were doing some tricky stuff to get the same form to do
+more than one thing.
+-By default prevent bots from hitting search urls.
+-Add omniauth capabilities - there is sample code for openID and OAuth. At
+UIUC we do shibboleth (uiuc-connections branch) and I have simple start
+(working) for LDAP (omniauth-ldap branch). Should make it very easy to
+customize for various remote authentications.
+-Load CSL files locally instead of over the web
+-Display Sherpa data in more places
+-Set up for cucumber (awaiting dependancy conflict with omniauth before
+turning on in the Gemfile
+-Set up for newrelic profiling (instructions of a sort in Gemfile)
+-Set up for metrical (stand alone metric_fu - having metric_fu as part
+of the project causes class collision) code analysis
+-Much code refactoring and cleanup
+-More tests
+-Many minor bugfixes
+
+1.1.0-rc3 - April 13, 2011
+--------------
+Many minor bugfixes
+Merged some of jstirnaman's changes
+Fixed import bug (caused by overaggressive uniqueness introduced in refactoring)
+Remove all usage of login (or username) in favor of email
+Index email field in database
+Make change of email go through a confirmation process
+
+1.1.0-rc2 - March 11, 2011
+--------------
+Fixed typo preventing 1.1.0-rc1 fropm working
+Made sherpa directory shared for capistrano deployments
+
+1.1.0-rc1 - March 11, 2011
+--------------
+Runs on Rails 3 (3.0.4 specifically) instead of Rails 2 (works with Ruby Enterprise Edition 1.8.7)
+Use Bundler for gem management
+Many gems and plugins upgraded (primarily for Rails 3 compatibility)
+Some gems added (e.g. for testing)
+Rails and many plugins unvendored and now handled as gems
+Testing moved to Rspec
+Many tests added - some trivial, some not
+A lot of code cleanup. Refactoring of code to more idiomatic ruby/rails, removal of stale/trivial comments, breakup of large methods, removal of magic numbers etc. The usual sorts of stuff.
+Issue 148 fixed - person can now be both author and editor, for example
+Migrations returned to db/migrate from db/archive
+Capistrano gem included in the bundle and a deploy.rb.template file included for those wishing to use cap to deploy
+Some minor bugfixes
+A lot of deprecation fixes
+A lot of observers removed and their work done in model callbacks. Rails 3 does model callbacks prior to observer callbacks, so the workaround for Rails 2 is no longer needed.
+Moved Index.rb from app/models to lib as it seems to fit better there, although this could be reversed at some point, as there seem to be arguments either way.
+Authentication now uses Authlogic (in compatibility mode for restful_authentication). This should provide a smoother experience as we attempt to add other kinds of authentication as well.
+Added Eric Muzzy batch csv person import.
+Added Jason Stirnaman person is active patch (plus some extra changes to help migrate existing installations to use it).
+Added prototype_legacy_helper plugin to avoid having to deal with Rails 3 javascript conventions right away.
+Changed routes both to conform to Rails 3 conventions and to remove default routes. All needed routes should henceforth be explicitly specified.
+Use destroy instead of delete in association :dependent definitions. I couldn't find any compelling reason for delete, and lacking such destroy is better as it will run callbacks on the destroyed models.
+Add additional submit button to publisher/publication editing so that user can return directly to alphabetical list.
+Add view to show and facilitate deletion of orphaned works (i.e. no contributorships) by editor on Work.
+Removed attachment_fu_hacks plugin. Hopefully the newer attachment_fu fixes the problems here.
+Updated code for newer version of acts_as_state_machine - some callbacks needed to be changed here.
+
+1.0.1 - October 18, 2010
+--------------
+Adds json, yaml, xml/rdf output for search results
+Fixes errors in rdf and json output
+Fixes security hole which allowed anyone logged in to add new works
+Adds a listing for Person roles on the User index
+Adds the ability to remove roles from new_admin and new_editor pages
+Improves authorization:
+- Fixes bugs
+- Increases the importance of the Group editor role (e.g., Group editors can now admin authorities)
+- Restricts access of regular users
+Fixes IE error on new Person page
+Fixes LDAP error
+
+1.0 - June 30, 2010
+--------------
+
+* 1.0 release (final)
+
+1.0RC3 - June 29, 2010
+--------------
+
+* Third 1.0 release candidate
+
+1.0RC2 - Feb 21, 2010
+--------------
+
+* Second 1.0 release candidate
+
+1.0RC1 - Sept 30, 2009
+--------------
+
+* First 1.0 release candidate
+

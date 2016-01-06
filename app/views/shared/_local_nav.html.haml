@@ -1,0 +1,11 @@
+#local-nav
+  - if object == "person"
+    - if defined?(state) && state == "new"
+      = render 'shared/local_nav_person_new'
+    - elsif defined?(state) && state == "edit"
+      = render 'shared/local_nav_person_edit'
+    - else
+      = render 'shared/local_nav_person'
+
+  - if object == "group"
+    = render 'shared/local_nav_group'

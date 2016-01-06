@@ -1,0 +1,30 @@
+- include_javascript('specific/publications/_form')
+%fieldset
+  %legend #{Publication.model_name.human}
+  = form_for @publication do |form|
+    %p
+      %label #{Publication.human_attribute_name(:name)}
+      %br/
+      = form.text_field :name
+    %p
+      %label #{Publication.human_attribute_name(:url)}
+      %br/
+      = form.text_field :url
+    %p
+      %label #{Publication.human_attribute_name(:issn_isbn)}
+      %br/
+      = form.text_field :issn_isbn
+    %p
+      %label #{Publisher.model_name.human}
+      %br/
+      = text_field :publication, :publisher_name
+
+    -if @publication.authority_id
+      %p
+        %label #{t('.auth_record')}
+        %br/
+        = form.collection_select :authority_id, @publications, :id, :name, {}, {:class => "col-xs-6"}
+
+    %p.submit
+      = submit_tag t('publications.form.save_show'), :name => :save_and_show
+      = submit_tag t('publications.form.save_go'), :name => :save_and_list

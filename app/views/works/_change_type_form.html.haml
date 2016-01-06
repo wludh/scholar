@@ -1,0 +1,8 @@
+#change_type.right
+  = form_for @work, :url => change_type_work_path(@work), :html => {:method => :put} do |form|
+    %label #{t '.label'}
+    %select{:name => 'type'}
+      - sorted_work_types.each do |type, label|
+        - klass = Work.type_to_class(type)
+        %option{:value => "#{klass}", :selected => selected_if_equal(klass, @work.class)} #{label}
+    = form.submit t('app.go')

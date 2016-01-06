@@ -1,0 +1,8 @@
+%h1 #{t('.heading')}
+
+= error_messages_for :keyword
+= form_for(@keyword) do |f|
+  %p
+    = f.submit t('app.create')
+
+= link_to t('app.back'), keywords_path

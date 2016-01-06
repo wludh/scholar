@@ -1,0 +1,18 @@
+#authority.col-xs-12
+  - if @authority_for.present?
+    %h4
+      #{name_or_unknown(@publication.name)}
+      &ndash; #{t '.auth_name'}:
+    %table#authority-children
+      %thead
+        %tr
+          %th #{t 'app.name'}
+          %th #{Publication.human_attribute_name(:issn_isbn)}
+          %th #{Publisher.model_name.human}
+      %tbody
+        - @authority_for.each do |auth|
+          %tr
+            %td=link_to name_or_unknown(auth.name), publication_path(auth)
+            %td= auth.issn_isbn
+            -if auth.publisher
+              %td= name_or_unknown(auth.publisher.name)

@@ -1,0 +1,20 @@
+%table
+  %thead
+    %tr
+      %td #{t('contributorships.archive_analysis_table.romeo_color_html')}
+      %td #{t('.pub_copy_allowed_html')}
+      %td #{t('app.name')}
+      %td #{Publisher.model_name.human}
+      %td #{Work.model_name.human_pl}
+
+  %tbody
+    - @publ_table.each do |row|
+      -# Default colors to unknown
+      - color = row.color
+      %tr{:class => color}
+        %td #{t("personalize.sherpa_colors.#{color.downcase}.name")}
+        %td= t('app.yes') if row.pub_copy?
+        %td #{row.name}
+        %td #{row.pub_name}
+        %td
+          = link_to row.count, person_works_path(@person, "fq[]" => URI.unescape("publication_facet%3A\"#{row.name}\""))

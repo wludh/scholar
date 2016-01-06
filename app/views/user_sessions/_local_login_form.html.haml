@@ -1,0 +1,22 @@
+%fieldset
+  %legend #{t '.header', :app_name => t('personalize.application_name')}
+  -# = form_for @user_session, :url => user_session_path(:return_to => params[:return_to]) do |f|
+  = form_for @user_session, :url => 'user_session?return_to=%2Fscholar' + params[:return_to] do |f|
+    %p
+      %label #{User.human_attribute_name(:email)}
+      %br/
+      = f.text_field 'email'
+    %p
+      %label #{User.human_attribute_name(:password)}
+      %br/
+      = f.password_field 'password'
+    %p
+      = f.check_box 'remember_me'
+      %label= t('user_sessions.local_login_form.remember')
+      = t('user_sessions.local_login_form.cookies')
+    %p
+      = link_to t('user_sessions.local_login_form.forgot_password'), new_password_path
+      |
+      = link_to t('user_sessions.local_login_form.sign_up'), signup_path
+    %p.submit
+      = submit_tag t('user_sessions.local_login_form.submit')

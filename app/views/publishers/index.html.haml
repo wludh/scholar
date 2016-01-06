@@ -1,0 +1,16 @@
+- include_stylesheet('common/sherpa')
+
+- if current_user_role?("editor", Group)
+  = render :layout => 'layouts/admin_bar' do
+    %li #{link_to t('common.publishers.new'), new_publisher_path}
+    %li #{link_to t('common.publishers.authority'), authorities_publishers_path(:page => params[:page])}
+
+= render :layout => '/layouts/main_body', :locals => {:header => Publisher.model_name.human_pl} do
+  = render "shared/alpha_pagination"
+
+  = render 'index_table'
+
+  %br/
+  %br/
+  = render "shared/alpha_pagination"
+

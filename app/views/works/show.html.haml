@@ -1,0 +1,32 @@
+- require 'sword_1_3_adapter'
+- include_stylesheet('specific/works/show')
+
+- if current_user_role?("editor", @work)
+  = render :layout => '/layouts/admin_bar' do
+    %li= link_to t('works.show.edit'), edit_work_path
+    - if !@work.archived?
+      %li= link_to t('works.show.archive'), new_work_attachment_path(@work)
+    -#If SWORD is configured, and Work is "Ready for Archiving"
+    -if Sword_1_3_Adapter.configured? and @work.ready_to_archive?
+      %li= link_to t('works.show.deposit'), admin_deposit_via_sword_path(:work_id => @work)
+
+= render :layout => 'layouts/main_body_no_h2' do
+  %h2
+    = raw @work.title_primary
+    %span.work-type
+      = @work.class.model_name.human
+
+  / Work Details
+  #work-details.col-xs-12
+    / COinS
+    %span.Z3988{:title => "#{coin(@work)}"}
+
+    -# JTM 2015-05-18: Added IF statement to limit Google Books links only to books
+    -if @work.class.model_name == "BookWhole" || @work.class.model_name == "BookSection"
+      = link_to_google_book(@work)
+    = render 'attachments', :files => @work.attachments
+    = render "metadata"
+
+  #local-relations.col-xs-4.prepend-1.last
+    = render "local_authors"
+    = render "local_recommendations"

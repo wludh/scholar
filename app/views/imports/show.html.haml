@@ -1,0 +1,23 @@
+- include_stylesheet('specific/imports/show')
+- include_javascript('specific/imports/show')
+
+= render :layout => 'layouts/admin_bar' do
+  %li= link_to_unless_current t('imports.show.show'), user_imports_path(current_user)
+  %li= link_to_unless_current t('imports.show.add'), new_user_import_path(current_user)
+
+= render :layout => '/layouts/main_body_no_h2' do
+
+  %h2
+    #{t('imports.show.header')} -
+    %span.import-review-batch-header #{t('imports.show.subheader_html', :imported_for => imported_for(@import))}
+
+  / Right - Admin div
+  .import-admin-div
+    - case @import.state
+      - when 'rejected', 'processing', 'accepted'
+        = render @import.state
+      - else
+        = render 'default'
+
+  -unless @import.state == "processing"
+    = render 'details'

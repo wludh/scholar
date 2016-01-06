@@ -1,0 +1,24 @@
+= render :layout => '/layouts/main_body_no_h2' do
+  - if @works.blank?
+    %h2 Saved
+    %p Nothing added yet.
+
+  - elsif @export.present?
+    %h2 Works
+    = @works.html_safe
+
+  - else
+    = render :layout => 'layouts/admin_bar' do
+      %li #{ link_to "Empty saved items?", delete_saved_path}
+
+    %h2 Saved #{@saved.items.size}
+
+    = render 'show_options_form'
+
+    .col-xs-7 #{ will_paginate @works.paginate}
+
+    %ol.col-xs-7.works.clear-both
+      - @works.each do |work|
+        = render "shared/proper_work", :work => work, :links => [:find_it, :saved]
+
+    .col-xs-7 #{ will_paginate @works.paginate}

@@ -1,0 +1,6 @@
+- include_stylesheet('specific/groups/index')
+
+- if params[:person_id]
+  = render 'person_index'
+- else
+  = render 'complete_index'

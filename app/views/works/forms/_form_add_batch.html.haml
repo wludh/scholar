@@ -1,0 +1,17 @@
+%fieldset
+  %legend #{t('works.forms.form_add_batch.legend')}
+
+  %p = t('works.forms.form_add_batch.instructions')
+  
+  %ul
+    %li
+      = form.label :works_file, t('works.forms.form_add_batch.upload')
+      = form.file_field :works_file, :class => 'text'
+
+    %li
+      = form.label :works, t('works.forms.form_add_batch.paste')
+      = form.text_area :works 
+    
+= hidden_field_tag :type, 'AddBatch'
+%p.buttons
+  = submit_tag t('works.forms.form_add_batch.add'), :disable_with => t('works.forms.form_add_batch.disable')

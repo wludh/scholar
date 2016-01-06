@@ -1,0 +1,10 @@
+%table#groups.table.table-condensed.table-hover
+  %tr
+    %th.col-xs-5 #{t('.group_name')}
+    %th.col-xs-5 #{t('.parent_group')}
+    %th.col-xs-1.text-right.last #{t('.members')}
+  - groups.each do |group|
+    %tr{:class => cycle("even", "odd")}
+      %td= link_to group.name, group
+      %td= parent_link(group)
+      %td.text-right= group.memberships.length

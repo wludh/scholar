@@ -1,0 +1,22 @@
+%table
+  %thead
+    %tr
+      %td #{t('.romeo_color_html')}
+      %td= t('contributorships.archive_analysis_table.archiving_policy')
+      %td #{t('app.percentage')}
+      %td #{Work.model_name.human_pl}
+  %tfoot
+    %tr
+      %td &nbsp;
+      %td &nbsp;
+      %td #{t('app.total')}
+      %td #{@pub_totals}
+  %tbody
+    - @pub_table.each do |row|
+      -# Default colors to unknown
+      - color = row.color
+      %tr{:class => color}
+        %td #{t("personalize.sherpa_colors.#{color.downcase}.name")}
+        %td #{t_sherpa_color_explanation(color)}
+        %td #{((row.count.to_f / @pub_totals.to_f) * 100).round}%
+        %td #{row.count}

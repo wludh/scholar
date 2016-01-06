@@ -1,0 +1,29 @@
+- include_stylesheet('specific/publications/show')
+- include_stylesheet('common/sherpa')
+
+- if @export.present?
+  = render :layout => 'layouts/main_body', :locals => {:header => Work.model_name.human_pl} do
+    = @works.html_safe
+
+- else
+  - if current_user_any_role?("editor", Group)
+    = render :layout => '/layouts/admin_bar' do
+      %li #{link_to t('common.publications.edit'), edit_publication_path(@publication)}
+
+  = render :layout => 'layouts/main_body', :locals => {:header => name_or_unknown(@publication.name)} do
+    -if @publication.publisher
+      = render 'show_publisher'
+
+    / Authority check
+    - if @authority_for.size == 0
+      = render 'show_not_authority'
+
+    -else
+
+      = render "shared/people", :count => 10, :randomize => false
+
+      = render "shared/groups", :count => 10
+
+      = render 'shared/pub_common/search_within_div', :submit_url => publication_path
+
+      = render 'show_authority'

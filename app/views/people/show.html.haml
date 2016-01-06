@@ -1,0 +1,37 @@
+- include_stylesheet('specific/people/show')
+- @title = @person.display_name # Specify text at end of HTML <title> tag
+
+- if current_user_role?("editor", @person)
+  = render :partial => "admin_actions", :layout => "layouts/admin_bar"
+
+/ ### Main ###
+= render :layout => 'layouts/main_body', :locals => {:header => show_header(@person)} do
+
+  = render "shared/local_nav", :object => "person"
+
+/ ## Content ###
+.col-xs-8.prepend-1
+
+  #image.col-sm-3.hidden-xs
+    = render 'show_image'
+
+  .col-xs-9
+    = render 'show_groups'
+
+    / ### Hide research focus for inactive people ###
+  - if @person.active? and @person.research_focus.present? and @person.research_focus.strip.length > 0
+    #research-focus.col-xs-7
+      = render 'show_research_focus'
+
+
+  - if @works.size > 0
+    #works.col-sm-8.col-xs-11
+      = render 'show_works'
+
+/ ### Sidebar ###
+.col-xs-4.last
+  - if @facets[:people_data].size > 1
+    = render :partial => "shared/coauthors", :layout => 'layouts/right_box_no_border'
+  = render :partial => 'show_work_types', :layout => 'layouts/right_box_no_border'
+  = render :partial => "shared/keyword_cloud", :layout => 'layouts/right_box_no_border', :locals => {:keywords => @keywords, :id => 'tagcloud'}
+  = render :partial => "shared/publications", :layout=> 'layouts/right_box_no_border', :locals => {:count => 10}
