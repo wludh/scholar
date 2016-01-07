@@ -26,4 +26,7 @@ Bibapp::Application.configure do
 # Uncomment if you need to see something running in production but with more logging
 #  config.log_level = :debug
 
+Rails.application.routes.default_url_options = {:script_name => '/scholar'}
+config.relative_url_root = "/scholar"
+Rails.application.config.action_controller.relative_url_root = '/scholar'
 end

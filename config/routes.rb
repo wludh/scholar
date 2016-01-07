@@ -1,4 +1,6 @@
 Bibapp::Application.routes.draw do
+
+    Rails.application.routes.default_url_options = {:script_name => '/scholar'}
   def make_routes
     resources :works do
       collection do

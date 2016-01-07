@@ -63,6 +63,8 @@ module Bibapp
 
     #log deprecations
     config.active_support.deprecation = :log
+    config.relative_url_root = "/scholar"
+    Rails.application.routes.default_url_options = {:script_name => '/scholar'}
   end
 
 end

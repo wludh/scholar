@@ -22,4 +22,6 @@ Bibapp::Application.configure do
 # The :test delivery method accumulates sent emails in the
 # ActionMailer::Base.deliveries array.
   config.action_mailer.delivery_method = :test
+
+    Rails.application.routes.default_url_options = {:script_name => '/scholar'}
 end

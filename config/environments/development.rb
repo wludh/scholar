@@ -23,4 +23,7 @@ Bibapp::Application.configure do
 # Don't want the mailer to send.
   config.action_mailer.delivery_method = :test
   config.action_mailer.raise_delivery_errors = false
+
+    Rails.application.routes.default_url_options = {:script_name => '/scholar'}
 end
+
