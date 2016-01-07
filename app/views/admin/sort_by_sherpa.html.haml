@@ -1,0 +1,8 @@
+= form_tag 'sort_by_sherpa', :method => "get", :id => 'filter_romeo_form' do
+  %p= select_tag 'romeo_color', options_for_select(Publisher::ROMEO_COLORS, :selected => params[:romeo_color]), :prompt => 'Select RoMEO Color', :id => 'filter_romeo'
+:javascript
+  $(document).ready(function(){
+    $('#filter_romeo').change(function(){
+      $('#filter_romeo_form').submit();
+    })
+  })
