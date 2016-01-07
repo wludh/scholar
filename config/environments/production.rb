@@ -24,6 +24,6 @@ Bibapp::Application.configure do
   }
 
 # Uncomment if you need to see something running in production but with more logging
-  config.log_level = :debug
-
+  config.log_level = :warn
+  #config.logger = Logger.new(Rails.root.join("log", Rails.env + ".log"), 3, 5*1024*1024)
 end
