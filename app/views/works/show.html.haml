@@ -14,9 +14,9 @@
   %h2
     = raw @work.title_primary
     %span.work-type
-      = @work.class.model_name.human
+      = @work.class.model_name.human 
 
-  / Work Details
+    / Work Details
   #work-details.col-xs-12
     / COinS
     %span.Z3988{:title => "#{coin(@work)}"}
@@ -27,6 +27,9 @@
     = render 'attachments', :files => @work.attachments
     = render "metadata"
 
+    = render 'shared/sherpa_status', :publisher => @work.publisher, :show_explanation => false   
   #local-relations.col-xs-4.prepend-1.last
     = render "local_authors"
     = render "local_recommendations"
+
+
