@@ -1,0 +1,36 @@
+= form_tag 'sort_by_sherpa', :method => "get", :id => 'filter_romeo_form' do
+  %p= select_tag 'romeo_color', options_for_select(Publisher::ROMEO_COLORS, :selected => params[:romeo_color]), :prompt => 'Select RoMEO Color', :id => 'filter_romeo'
+- if @works != []
+  %table
+    %thead
+      %tr
+        %th Title
+        %th Authors
+        %th Email
+        %th Date
+    %tbody
+      - counter = 1
+      - @works.each do |work|
+        %tr{:style => "border-bottom:1px dashed #ccc;"}
+          %td= counter.to_s + ". " + work.sort_name.to_s
+          %td
+            - @people = Person.all
+            - for @person in @people do
+              - if @person.scoring_hash
+                -if @person.scoring_hash[:publication_ids].include? work.publication_id
+                  %p=  @person.display_name
+          %td
+            - @people = Person.all
+            - for @person in @people do
+              - if @person.scoring_hash
+                -if @person.scoring_hash[:publication_ids].include? work.publication_id
+                  %p= @person.email
+          %td= work.created_at
+          - counter.to_i
+          - counter = counter + 1
+:javascript
+  $(document).ready(function(){
+    $('#filter_romeo').change(function(){
+      $('#filter_romeo_form').submit();
+    })
+  })

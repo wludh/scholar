@@ -884,5 +884,11 @@ class Work < ActiveRecord::Base
     self.publication = publication.authority
     self.initial_publication_id = publication.id
   end
-
+  def self.get_works_by_sherpa(params)
+    #conditions = ['']
+    #conditions = ['publisher.romeo_color = ?', params[:romeo_color]] if params[:romeo_color]
+    #self.where(conditions)
+    self.joins(:publisher).where(:publishers => {:romeo_color => params[:romeo_color]}).all
+  end
 end
+

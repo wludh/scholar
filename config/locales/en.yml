@@ -665,6 +665,7 @@ en:
       recent: "Recent works"
       recommendations: "Similar works at %{institution}"
       update_author_list: "Successfully updated order of authors!"
+      sort_by_sherpa: "Sort works by SHERPA/RoMEO classification"
       update_editor_list: "Successfully updated order of editors!"
       update_list: "Successfully updated order of list!"
   contributorships:
