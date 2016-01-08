@@ -1,15 +1,17 @@
+Romeo Color
 = form_tag 'sort_by_sherpa', :method => "get", :id => 'filter_romeo_form' do
   %p= select_tag 'romeo_color', options_for_select(Publisher::ROMEO_COLORS, :selected => params[:romeo_color]), :prompt => 'Select RoMEO Color', :id => 'filter_romeo'
 - if @works != []
   %table
     %thead
       %tr
-        %th Title
+        %th Work Title
         %th Authors
         %th Email
         %th Date
+        %th Find in BibApp
     %tbody
-      - counter = 1
+      - counter = (10 * (@page_count.to_i-1)) + 1
       - @works.each do |work|
         %tr{:style => "border-bottom:1px dashed #ccc;"}
           %td= counter.to_s + ". " + work.sort_name.to_s
@@ -17,7 +19,7 @@
             - @people = Person.all
             - for @person in @people do
               - if @person.scoring_hash
-                -if @person.scoring_hash[:publication_ids].include? work.publication_id
+                - if @person.scoring_hash[:publication_ids].include? work.publication_id
                   %p=  @person.display_name
           %td
             - @people = Person.all
@@ -28,6 +30,8 @@
           %td= work.created_at
           - counter.to_i
           - counter = counter + 1
+          %td= link_to 'Find', work_path(work.id) 
+%div{:style => "text-align:center;"}= will_paginate @works
 :javascript
   $(document).ready(function(){
     $('#filter_romeo').change(function(){

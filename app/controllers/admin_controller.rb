@@ -8,6 +8,12 @@ class AdminController < ApplicationController
 
   def sort_by_sherpa
     @works = Work.get_works_by_sherpa(params).paginate(:page => params[:page], :per_page => 10)
+    if params[:page].to_i == 0
+      @page_count = 1
+    else
+      @page_count = params[:page]
+    end
+    #@works = Work.get_works_by_sherpa(params)
       respond_to do |format|
       format.html # index.html.erb
       #format.json { render :json => @works }
