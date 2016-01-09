@@ -5,16 +5,19 @@ Romeo Color
   %table
     %thead
       %tr
-        %th Work Title
+        %th Work
         %th Authors
         %th Email
         %th Date
-        %th Find in BibApp
+        %th Work in BibApp
+        %th Publication
+        %th Publisher
+        %th Journal ISSN
     %tbody
       - counter = (10 * (@page_count.to_i-1)) + 1
       - @works.each do |work|
         %tr{:style => "border-bottom:1px dashed #ccc;"}
-          %td= counter.to_s + ". " + work.sort_name.to_s
+          %td= link_to work.sort_name, work_path(work.id)
           %td
             - @people = Person.all
             - for @person in @people do
@@ -31,6 +34,11 @@ Romeo Color
           - counter.to_i
           - counter = counter + 1
           %td= link_to 'Find', work_path(work.id) 
+          %td= link_to Publication.find_by_id(work.publication_id).sort_name, publication_path(Publication.find_by_id(work.publication_id))
+          %td= link_to Publisher.find_by_id(work.publisher_id).sort_name, publisher_path(Publisher.find_by_id(work.publisher_id))
+          %td
+            = work.publication.issn_isbn
+            = link_to 'Find Color in Sherpa/Romeo', 'http://www.sherpa.ac.uk/romeo/search.php?issn=' + work.publication.issn_isbn.to_s           
 %div{:style => "text-align:center;"}= will_paginate @works
 :javascript
   $(document).ready(function(){
