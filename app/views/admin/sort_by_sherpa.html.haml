@@ -12,7 +12,7 @@ Romeo Color
         %th Work in BibApp
         %th Publication
         %th Publisher
-        %th Journal ISSN
+        %th Color According to S/R
     %tbody
       - counter = (10 * (@page_count.to_i-1)) + 1
       - @works.each do |work|
@@ -37,8 +37,15 @@ Romeo Color
           %td= link_to Publication.find_by_id(work.publication_id).sort_name, publication_path(Publication.find_by_id(work.publication_id))
           %td= link_to Publisher.find_by_id(work.publisher_id).sort_name, publisher_path(Publisher.find_by_id(work.publisher_id))
           %td
-            = work.publication.issn_isbn
-            = link_to 'Find Color in Sherpa/Romeo', 'http://www.sherpa.ac.uk/romeo/search.php?issn=' + work.publication.issn_isbn.to_s           
+            =# work.publication.issn_isbn
+            =# link_to 'Find Color in Sherpa/Romeo', 'http://www.sherpa.ac.uk/romeo/search.php?issn=' + work.publication.issn_isbn 
+            =# Publisher.retrieve_journals_by_issn(work.publication.issn_isbn)
+            - if !work.publication.issn_isbn.nil? && !Publisher.retrieve_journals_by_issn(work.publication.issn_isbn).nil?
+              = link_to Publisher.retrieve_journals_by_issn(work.publication.issn_isbn), 'http://www.sherpa.ac.uk/romeo/search.php?issn=' + work.publication.issn_isbn 
+            - elsif !work.publication.issn_isbn.nil?
+              Not a valid ISBN format
+            - else
+              No ISSN_ISBN
 %div{:style => "text-align:center;"}= will_paginate @works
 :javascript
   $(document).ready(function(){
