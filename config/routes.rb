@@ -228,7 +228,6 @@ Bibapp::Application.routes.draw do
     get '/admin/controllers/index/path' => 'admin#sort_by_sherpa'
 end
 
-
   if I18n.available_locales.many?
     locale_regexp = Regexp.new(I18n.available_locales.join('|'))
     scope "(:locale)", :locale => locale_regexp do
