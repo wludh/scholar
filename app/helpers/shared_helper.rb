@@ -55,6 +55,8 @@ module SharedHelper
 
   def add_filter(params, facet, value, count, label = nil)
     label ||= value
+    #facet = facet.force_encoding("UTF-8")
+    value = value.force_encoding("UTF-8")
     filter = Hash.new
     if params[:fq]
       filter[:fq] = params[:fq].collect.to_a
