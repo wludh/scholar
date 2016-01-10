@@ -187,8 +187,7 @@ respond_to :js, :json, :html
             @document = nil
           end
           CopyrightMailer.copyright_email(current_user, @work, @document).deliver if params.has_key?(:copyright_interest)
-          #format.html {redirect_to "/scholar" + work_path(@work) }
-          format.html { redirect_to work_path(@work) }
+          format.html {redirect_to "/scholar" + work_path(@work) }
           format.xml { head :created, :location => work_path(@work) }
         end
       else
