@@ -11,8 +11,12 @@
       A scholar would like to begin a conversation about archiving their work.
     <% end %>
     <p>They can be reached at <%= @user.email %>.</p>
-    <p>The article in question is titled <%= @work.title_primary%></p>
-    <p>Article is of type <%= @work.type %>.</p>
+    <p>The work in question is titled <%= @work.title_primary%></p>
+    <% if !@work.notes.nil? %>
+      <p>Work was attached with the following notes: <%= @work.notes %>.</p>
+    <% else %>
+      <p>Work was not given any notes about copyright. Contact author.</p>
+    <% end %>
     <% if !@work.publication.issn_isbn.nil? && !Publisher.retrieve_journals_by_issn(@work.publication.issn_isbn).nil? %>
       <p>Romeo Code of journal is <%= link_to Publisher.retrieve_journals_by_issn(@work.publication.issn_isbn), 'http://www.sherpa.ac.uk/romeo/search.php?issn=' + @work.publication.issn_isbn %></p>
     <% elsif !@work.publication.issn_isbn.nil? %> 

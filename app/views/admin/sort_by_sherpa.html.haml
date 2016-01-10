@@ -1,4 +1,23 @@
-Romeo Color
+%p The following interface is meant to help with sorting works by their sherpa/romeo categories. It paginates from oldest to newest works in the system And fills in as much information as it can about these relevant categories.
+
+%p But some metadata categories need to be cleaned before it can really be useful. Sorting by romeo colors listed as “Unknown” will get you started. Some of the problems are BibApp’s: BibApp grabs a work’s romeo categories from the publishers, but this causes a lot of problems.
+
+%p A lot of publishers are still listed as unknown. An unknown publisher yields an unknown romeo color. So unknown publishers should be researched and filled in.
+
+%p But even when a publisher is known, a single publisher might have multiple sherpa/romeo categories. See Oxford University Press, for example, which has 330 publications, many with different romeo colors. This interface allows you to see the romeo color that a journal should have by searching on a more specific basis using its ISSN/ISBN, but that means that the ISSN_ISBN numbers need to be filled in and cleaned. The column on the far right tells you what sherpa/romeo says the color should be, which will allow you to make a best guess as to what the publisher should be. From within the publisher interface, you can then edit a publisher and assign a new romeo_color based on this more accurate prediction. BibApp allows you to have multiple Publishers with the same name and different romeo categories, so you will need to make sure that the publisher associated with the journal is correct. So once you fix Oxford University Press to all be green, you will have to break out particular publications to be Oxford University Press Orange, etc.
+
+%p 1. Fill in and clean Publisher category.
+%p 2. Fill in and clean ISSN_ISBN category.
+%p 3. Find the romeo color for the journal based on the ISSN/ISBN using the interface.
+%p 4. Check to make sure that publisher does not have multiple publications in BibApp (multiple works are fine).
+%p 5. If they do, make sure that you associate the publication with the correct subset of the publisher - Oxford University Press Orange / Oxford University Green, etc.
+%p 6. Edit the publisher or subset of the publisher to be the appropriate color.
+
+%p A long-term, more elegant fix will entail actually associating romeo colors with publications instead of journals, but for now the data cleaning should be easy enough and accomplish the same task while also making such a solution possible. 
+
+%p Email walshb@wlu.edu with any problems. Happy cleaning!
+
+%p Filter by Romeo Color
 = form_tag 'sort_by_sherpa', :method => "get", :id => 'filter_romeo_form' do
   %p= select_tag 'romeo_color', options_for_select(Publisher::ROMEO_COLORS, :selected => params[:romeo_color]), :prompt => 'Select RoMEO Color', :id => 'filter_romeo'
 - if @works != []
