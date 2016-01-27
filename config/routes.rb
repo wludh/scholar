@@ -224,7 +224,9 @@ Bibapp::Application.routes.draw do
     match 'roles/create' => "roles#create"
     match 'roles/new_admin' => "roles#new_admin"
     match 'roles/new_editor' => "roles#new_editor"
-  end
+    match 'admin/sort_by_sherpa' => 'admin#sort_by_sherpa'
+    get '/admin/controllers/index/path' => 'admin#sort_by_sherpa'
+end
 
   if I18n.available_locales.many?
     locale_regexp = Regexp.new(I18n.available_locales.join('|'))

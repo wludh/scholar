@@ -1,0 +1,69 @@
+%p The following interface is meant to help with sorting works by their sherpa/romeo categories. It paginates from oldest to newest works in the system And fills in as much information as it can about these relevant categories.
+
+%p But some metadata categories need to be cleaned before it can really be useful. Sorting by romeo colors listed as “Unknown” will get you started. Some of the problems are BibApp’s: BibApp grabs a work’s romeo categories from the publishers, but this causes a lot of problems.
+
+%p A lot of publishers are still listed as unknown. An unknown publisher yields an unknown romeo color. So unknown publishers should be researched and filled in.
+
+%p But even when a publisher is known, a single publisher might have multiple sherpa/romeo categories. See Oxford University Press, for example, which has 330 publications, many with different romeo colors. This interface allows you to see the romeo color that a journal should have by searching on a more specific basis using its ISSN/ISBN, but that means that the ISSN_ISBN numbers need to be filled in and cleaned. The column on the far right tells you what sherpa/romeo says the color should be, which will allow you to make a best guess as to what the publisher should be. From within the publisher interface, you can then edit a publisher and assign a new romeo_color based on this more accurate prediction. BibApp allows you to have multiple Publishers with the same name and different romeo categories, so you will need to make sure that the publisher associated with the journal is correct. So once you fix Oxford University Press to all be green, you will have to break out particular publications to be Oxford University Press Orange, etc.
+
+%p 1. Fill in and clean Publisher category.
+%p 2. Fill in and clean ISSN_ISBN category.
+%p 3. Find the romeo color for the journal based on the ISSN/ISBN using the interface.
+%p 4. Check to make sure that publisher does not have multiple publications in BibApp (multiple works are fine).
+%p 5. If they do, make sure that you associate the publication with the correct subset of the publisher - Oxford University Press Orange / Oxford University Green, etc.
+%p 6. Edit the publisher or subset of the publisher to be the appropriate color.
+
+%p A long-term, more elegant fix will entail actually associating romeo colors with publications instead of journals, but for now the data cleaning should be easy enough and accomplish the same task while also making such a solution possible. 
+
+%p Email walshb@wlu.edu with any problems. Happy cleaning!
+
+%p Filter by Romeo Color
+= form_tag 'sort_by_sherpa', :method => "get", :id => 'filter_romeo_form' do
+  %p= select_tag 'romeo_color', options_for_select(Publisher::ROMEO_COLORS, :selected => params[:romeo_color]), :prompt => 'Select RoMEO Color', :id => 'filter_romeo'
+- if @works != []
+  %table
+    %thead
+      %tr
+        %th Work
+        %th Authors
+        %th Email
+        %th Date
+        %th Publication
+        %th Publisher
+        %th Color According to S/R
+    %tbody
+      - counter = (10 * (@page_count.to_i-1)) + 1
+      - @works.each do |work|
+        %tr{:style => "border-bottom:1px dashed #ccc;"}
+          %td= link_to work.sort_name, work_path(work.id)
+          %td
+            - @people = Person.all
+            - for @person in @people do
+              - if @person.scoring_hash
+                - if @person.scoring_hash[:publication_ids].include? work.publication_id
+                  %p=  @person.display_name
+          %td
+            - @people = Person.all
+            - for @person in @people do
+              - if @person.scoring_hash
+                -if @person.scoring_hash[:publication_ids].include? work.publication_id
+                  %p= @person.email
+          %td= work.created_at
+          - counter.to_i
+          - counter = counter + 1
+          %td= link_to Publication.find_by_id(work.publication_id).sort_name, publication_path(Publication.find_by_id(work.publication_id))
+          %td= link_to Publisher.find_by_id(work.publisher_id).sort_name, publisher_path(Publisher.find_by_id(work.publisher_id))
+          %td
+            - if !work.publication.issn_isbn.nil? && !Publisher.retrieve_journals_by_issn(work.publication.issn_isbn).nil?
+              = link_to Publisher.retrieve_journals_by_issn(work.publication.issn_isbn), 'http://www.sherpa.ac.uk/romeo/search.php?issn=' + work.publication.issn_isbn 
+            - elsif !work.publication.issn_isbn.nil?
+              Not a valid ISBN format
+            - else
+              No ISSN_ISBN
+%div{:style => "text-align:center;"}= will_paginate @works
+:javascript
+  $(document).ready(function(){
+    $('#filter_romeo').change(function(){
+      $('#filter_romeo_form').submit();
+    })
+  })

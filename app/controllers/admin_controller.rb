@@ -6,6 +6,20 @@ class AdminController < ApplicationController
   #Only System Admins can access this controller's methods
   permit "admin of System"
 
+  def sort_by_sherpa
+    @works = Work.get_works_by_sherpa(params).paginate(:page => params[:page], :per_page => 10)
+    if params[:page].to_i == 0
+      @page_count = 1
+    else
+      @page_count = params[:page]
+    end
+    #@works = Work.get_works_by_sherpa(params)
+      respond_to do |format|
+      format.html # index.html.erb
+      #format.json { render :json => @works }
+    end
+  end
+
   def index
     @title = t('admin.tasks')
     @tab_name = params[:tab] || "works"
@@ -101,5 +115,4 @@ class AdminController < ApplicationController
   def work_mets(work)
     render_to_string("works/_package.mets.builder", :locals => {:work => work, :filenames_only => true})
   end
-
 end

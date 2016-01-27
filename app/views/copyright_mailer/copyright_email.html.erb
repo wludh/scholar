@@ -1,0 +1,27 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>New work for archiving</h1>
+    <% if !@user.person_id.nil? %>
+      <%= Person.find_by_id(@user.person_id.machine_name)%> would like to begin a conversation about archiving their work.
+    <% else  %>
+      A scholar would like to begin a conversation about archiving their work.
+    <% end %>
+    <p>They can be reached at <%= @user.email %>.</p>
+    <p>The work in question is titled <%= @work.title_primary%></p>
+    <% if !@work.notes.nil? %>
+      <p>Work was attached with the following notes: <%= @work.notes %>.</p>
+    <% else %>
+      <p>Work was not given any notes about copyright. Contact author.</p>
+    <% end %>
+    <% if !@work.publication.issn_isbn.nil? && !Publisher.retrieve_journals_by_issn(@work.publication.issn_isbn).nil? %>
+      <p>Romeo Code of journal is <%= link_to Publisher.retrieve_journals_by_issn(@work.publication.issn_isbn), 'http://www.sherpa.ac.uk/romeo/search.php?issn=' + @work.publication.issn_isbn %></p>
+    <% elsif !@work.publication.issn_isbn.nil? %> 
+     <p>Work did not have a valid ISBN format, so Romeo color for journal could not be determined. Contact the author.</p>
+    <% else%>
+      <p>No ISSN_ISBN number given for the work. Contact the author.</p>
+    <% end %>
+</html>

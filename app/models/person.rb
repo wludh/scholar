@@ -303,7 +303,6 @@ class Person < ActiveRecord::Base
       t2 <=> t1
     end
   end
-
   protected
 
   def clean_name(name)
@@ -320,5 +319,6 @@ class Person < ActiveRecord::Base
   def join_names(separator, *names)
     names.select { |x| x.present? }.join(separator)
   end
+
 
 end

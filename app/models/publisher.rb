@@ -135,4 +135,39 @@ class Publisher < PubCommon
     return name, id
   end
 
+  def self.retrieve_journals_by_issn(issn)
+    @romeo_color = nil
+    issn.gsub!(' ', '%20')
+       
+    # First check that solr is running
+    # We need it to be in order for the new publishers to be indexed
+    begin
+      n = Net::HTTP.new('127.0.0.1', SOLR_PORT)
+      n.request_head('/').value
+
+    rescue Errno::ECONNREFUSED, Errno::EBADF, Errno::ENETUNREACH #not responding
+      puts "Warning: Updating Sherpa data requires Solr to be running. Exiting...\n"
+
+    rescue Net::HTTPServerException #responding
+
+      sherpa_response = Net::HTTP.get_response(URI.parse('http://sherpa.ac.uk/romeo/api29.php?issn=' + issn + '&ak=hWg4cNh4uqA'))
+      data = Nokogiri::XML::Document.parse(sherpa_response.body)
+      if data.css('.main font p').text.length != 0
+         #@romeo_color = data.css('.main font ul').text
+         @romeo_color = nil
+      else
+        data.css('romeoapi publishers publisher').each do |pub|
+          @romeo_color = pub.at_css('romeocolour').text
+        end
+      end
+
+    return @romeo_color
+
+    rescue
+      puts "Unexpected Error: #{$!.class.to_s} #{$!}"
+      raise
+    end
+
+  end
+
 end

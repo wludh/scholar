@@ -2,6 +2,8 @@ require 'will_paginate/array'
 require 'set'
 class WorksController < ApplicationController
 
+respond_to :js, :json, :html
+
   #Require a user be logged in to create / update / destroy
   before_filter :login_required, :only => [:new, :create, :edit, :update, :destroy, :destroy_multiple, :orphans]
 
@@ -178,8 +180,14 @@ class WorksController < ApplicationController
           c.verify_contributorship if c
         end
         respond_to do |format|
-          flash[:notice] = t('common.works.flash_create')
-          format.html { redirect_to "/scholar" + work_path(@work) }
+          flash[:notice] = t('common.works.flash_create') 
+          if params[:document]
+            @document = params[:document]
+          else
+            @document = nil
+          end
+          CopyrightMailer.copyright_email(current_user, @work, @document).deliver if params.has_key?(:copyright_interest)
+          format.html {redirect_to "/scholar" + work_path(@work) }
           format.xml { head :created, :location => work_path(@work) }
         end
       else

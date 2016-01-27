@@ -5,12 +5,25 @@
     %th.col-xs-1.text-right.last #{Publication.model_name.human_pl}
   - most_recent_years = most_recent_year_hash(@current_objects)
   - publication_counts = publication_count_hash(@current_objects)
-  - @current_objects.each do |publisher|
-    %tr{:class => cycle("odd", "even")}
-      %td
-        - color = publisher.sherpa_color_or_unknown_as_sym
-        - cache(:controller => 'publishers', :action => 'index', :action_suffix => "#{I18n.locale}-shared-sherpa_icon-#{color}") do
-          = render 'shared/sherpa_icon', :color => color
-        #{link_to name_or_unknown(publisher.name), publisher_path(publisher)}
-      %td #{most_recent_years[publisher.id] || ''}
-      %td.text-right #{publication_counts[publisher.id] || '0'}
+  -# if params[:person_id] and current_user_role?("editor", Person.find(params[:person_id]))
+  - if current_user_any_role?("editor", Group) or current_user_role?('admin', Work)
+    - @current_objects.each do |publisher|
+      %tr{:class => cycle("odd", "even")}
+        %td
+          - color = publisher.sherpa_color_or_unknown_as_sym
+          - cache(:controller => 'publishers', :action => 'index', :action_suffix => "#{I18n.locale}-shared-sherpa_icon-#{color}") do
+            = render 'shared/sherpa_icon', :color => color
+          #{link_to name_or_unknown(publisher.name), publisher_path(publisher)}
+        %td #{most_recent_years[publisher.id] || ''}
+        %td.text-right #{publication_counts[publisher.id] || '0'}
+  - else
+    - @current_objects.each do |publisher|
+      - if publication_counts[publisher.id]
+        %tr{:class => cycle("odd", "even")}
+          %td
+            - color = publisher.sherpa_color_or_unknown_as_sym
+            - cache(:controller => 'publishers', :action => 'index', :action_suffix => "#{I18n.locale}-shared-sherpa_icon-#{color}") do
+              = render 'shared/sherpa_icon', :color => color
+            #{link_to name_or_unknown(publisher.name), publisher_path(publisher)}
+          %td #{most_recent_years[publisher.id] || ''}
+          %td.text-right #{publication_counts[publisher.id] || '0'}
