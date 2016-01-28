@@ -12,6 +12,6 @@ class CopyrightMailer < ActionMailer::Base
     else
      puts "Contact Sys Admin for help."
     end
-    mail(to: 'walshb@wlu.edu', subject: 'Author interested in archiving their work through BibApp.', from: from)
+    mail(to: 'digitalarchive@wlu.edu', subject: 'Author interested in archiving their work through BibApp.', from: from)
   end
 end
