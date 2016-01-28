@@ -6,7 +6,7 @@
   <body>
     <h1>New work for archiving</h1>
     <% if !@user.person_id.nil? %>
-      <%= Person.find_by_id(@user.person_id.machine_name)%> would like to begin a conversation about archiving their work.
+      <%= Person.find_by_id(@user.person_id).machine_name %> would like to begin a conversation about archiving their work.
     <% else  %>
       A scholar would like to begin a conversation about archiving their work.
     <% end %>
