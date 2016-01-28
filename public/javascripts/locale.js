@@ -12,7 +12,7 @@ function datatables_language_url() {
 $jq(function () {
       var opts = {
             fallbackLang: "en",
-            dicoPath: "/javascripts/translations",
+            dicoPath: "/scholar/javascripts/translations",
             setDollarT: false,
             lang: requested_locale()
           };

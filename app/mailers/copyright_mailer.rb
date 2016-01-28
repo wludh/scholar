@@ -6,12 +6,12 @@ class CopyrightMailer < ActionMailer::Base
     @work = work
     @document = document
     if @document.respond_to?(:read)
-     attachments[@document.original_filename] = @document.read
+      attachments[@document.original_filename] = @document.read
     elsif @document.respond_to?(:path)
       attachments[@document.original_filename] = File.read(@document.path)
     else
-     puts "Contact Sys Admin for help."
+      puts "Contact Sys Admin for help."
     end
-    mail(to: 'walshb@wlu.edu', subject: 'Author interested in archiving their work through BibApp.', from: from)
+    mail(to: 'digitalarchive@wlu.edu', subject: 'Author interested in archiving their work through BibApp.', from: from)
   end
 end
