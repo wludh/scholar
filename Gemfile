@@ -1,5 +1,5 @@
-source "http://rubygems.org"
-source "http://gems.github.com"
+source "https://rubygems.org"
+
 
 #Rails itself
 gem "rails", "~> 3.2.6"
