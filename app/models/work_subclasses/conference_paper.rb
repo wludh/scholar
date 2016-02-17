@@ -45,7 +45,7 @@ class ConferencePaper < Work
     citation_string << "#{self.publication.authority.name}" if self.publication
     citation_string << ", (" if self.start_page or self.end_page
     citation_string << self.start_page if self.start_page
-    citation_string << "-#{self.end_page}" if self.end_page
+    citation_string << "-#{self.end_page}" if self.end_page.blank?
     citation_string << ")" if self.start_page or self.end_page
     citation_string << "." if !citation_string.match("\.\s*\Z")
     citation_string << self.publisher.authority.name if self.publisher

@@ -693,13 +693,15 @@ class Work < ActiveRecord::Base
   end
 
   #defines a default behavior - override in subclass to specialize
+  #JTM 2016-02-17: Added blank? to fields for empty test, moved ", " to only be there if subsequent data is there
   def append_apa_work_type_specific_text!(citation_string)
-    citation_string << "#{self.publication.authority.name}, " if self.publication
-    citation_string << self.volume if self.volume
-    citation_string << "(#{self.issue})" if self.issue
-    citation_string << ", " if self.start_page or self.end_page
-    citation_string << self.start_page if self.start_page
-    citation_string << "-#{self.end_page}" if self.end_page
+    citation_string << "#{self.publication.authority.name}" if !self.publication.blank?
+    citation_string << ", " if !self.volume.blank? or !self.start_page.blank? or !self.end_page.blank?
+    citation_string << self.volume if !self.volume.blank?
+    citation_string << "(#{self.issue})" if !self.issue.blank? and !self.volume.blank?
+    citation_string << ", " if !self.start_page.blank? or !self.end_page.blank?
+    citation_string << self.start_page if !self.start_page.blank?
+    citation_string << "-#{self.end_page}" if !self.end_page.blank?
     citation_string << "."
   end
 
