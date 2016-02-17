@@ -53,7 +53,7 @@ function ajax_append(url, selector) {
  * The following two functions prevent
  * non-W&L users from registering for the site
  **********************************************/
-/*
+
 $jq(document).ready ( function () {
   $jq("#signup-form").submit ( function (event) {
     if ( validateWLUEmail($jq("#user_email").val()) ) {
@@ -77,4 +77,4 @@ function validateWLUEmail(email) {
         return false;
     }
 }
-*/
+
