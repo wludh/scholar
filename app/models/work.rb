@@ -888,7 +888,7 @@ class Work < ActiveRecord::Base
     #conditions = ['']
     #conditions = ['publisher.romeo_color = ?', params[:romeo_color]] if params[:romeo_color]
     #self.where(conditions)
-    self.joins(:publisher).where(:publishers => {:romeo_color => params[:romeo_color]}).all
+    self.joins(:publisher).where(:publishers => {:romeo_color => params[:romeo_color]}).where(:type => "JournalArticle")
   end
 end
 
