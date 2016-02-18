@@ -60,7 +60,9 @@ $jq(document).ready ( function () {
       return;
     }
   
-    $jq("#emailerror").text('Email must be a valid W&L e-mail address (username@wlu.edu).').show().delay(4000).fadeOut(1000);
+    $jq("#emailerror").html('<span class="label label-danger">Email must be a valid W&L e-mail address (username@wlu.edu).</span>').show().delay(4000).fadeOut(1000);
+    $jq("#user_email").addClass('highlight-email-error');
+    setTimeout(function() { $jq("#user_email").removeClass('highlight-email-error', 1000); }, 4000);
     event.preventDefault();
   });
 });

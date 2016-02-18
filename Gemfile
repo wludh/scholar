@@ -74,7 +74,8 @@ gem 'rails-i18n'
 #production, for example. Note that the appropriate database for your
 #set up does need to be specified here, though, or things will fail
 #pretty quickly.
-gem 'mysql'
+#gem 'activerecord-mysql2-adapter'
+gem 'mysql2', "< 0.3.11"
 
 #dump database in YAML form - honestly, I'm not sure why we need this, but
 #while I am porting to Rails 3 I'm not going to worry about it.
