@@ -1,4 +1,5 @@
 #require work and author name to be passed
+
 def make_names(name_string_data)
   names = name_string_data.first(3).collect do |datum|
     name, id = NameString.parse_solr_data(datum)
@@ -13,7 +14,11 @@ xml.item do
 
   xml.description {
     xml.cdata!(work['type'])
-    xml.cdata!(render(subclass_partial_for(work) + ".html.haml", :work => work))
+    str = render(subclass_partial_for(work) + ".html.haml", :work => work)
+    if str.force_encoding("UTF-8").valid_encoding?
+      xml.cdata!(str)
+    end
+    #xml.cdata!(render(subclass_partial_for(work) + ".html.haml", :work => work))
     xml.cdata!(work['abstract']) if work['abstract']
   }
 

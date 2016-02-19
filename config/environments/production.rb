@@ -3,6 +3,8 @@
 # The production environment is meant for finished, "live" apps.
 # Code is not reloaded between requests
 Bibapp::Application.configure do
+#  Encoding.default_external = Encoding::UTF_8
+#  Encoding.default_internal = Encoding::UTF_8
   config.cache_classes = true
 
 # Use a different logger for distributed setups
