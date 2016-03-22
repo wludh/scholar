@@ -29,6 +29,12 @@ module SharedHelper
     if name_string_data.size > 5
       links << link_to(t('common.shared.more'), work_path(work_id))
     end
+    #auths = [prefix, links.join("; "), postfix].join.html_safe
+    #if auths.force_encoding("UTF-8").valid_encoding?
+    #  return auths
+    #else
+    #  return ''
+    #end
     return [prefix, links.join("; "), postfix].join.html_safe
   end
 
@@ -37,6 +43,7 @@ module SharedHelper
   end
 
   def link_to_work_publisher(work)
+    logger.debug("&&&&&&&&&&&&&&&&&&" + work['publisher_data'] + " || " + :publisher_path + "&&&&&&&&&&&&&&&&&")
     link_to_work_pub_common(work['publisher_data'], Publisher, :publisher_path)
   end
 

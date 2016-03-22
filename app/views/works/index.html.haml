@@ -1,3 +1,5 @@
+-#encoding: UTF-8
+
 - include_stylesheet('specific/works/index')
 
 / ### Person / Works ###
@@ -11,13 +13,12 @@
     - if current_user.has_role?('admin', Work)
       %li #{link_to(t('works.index.view_orphans'), orphans_works_path)}
 
-= render :layout => 'layouts/main_body_no_h2' do
+= render :layout => "layouts/main_body_no_h2" do
   - if @view == "all"
-
     - if params[:person_id]
-      = render 'person_index_search'
+      = render "person_index_search"
     - if params[:group_id]
-      = render 'group_index_search'
+      = render "group_index_search"
 
     #results.col-xs-12
       .col-xs-2
@@ -27,12 +28,12 @@
 
   - else
     -# %h2 #{t('works.index.heading_html')}
-
+  
     .col-xs-8
       -# = render "shared/people", :count => 15, :randomize => true
       = render "shared/people", :count => 18, :randomize => true
     .col-xs-4.last
-      = render 'first_works'
+      = render "first_works"
 
     #facets.col-xs-12
       .col-xs-4

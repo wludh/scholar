@@ -207,6 +207,7 @@ Bibapp::Application.routes.draw do
     root :to => 'works#index'
 
     match 'citations', :to => 'works#index'
+    match 'scholar/*scholar', :to => 'works#index'
 
     resource :user_session
 

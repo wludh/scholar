@@ -3,16 +3,14 @@
 # The production environment is meant for finished, "live" apps.
 # Code is not reloaded between requests
 Bibapp::Application.configure do
-#  Encoding.default_external = Encoding::UTF_8
-#  Encoding.default_internal = Encoding::UTF_8
   config.cache_classes = true
 
 # Use a different logger for distributed setups
 # config.logger = SyslogLogger.new
 
 # Full error reports are disabled and caching is turned on
-  config.consider_all_requests_local = false
-  config.action_controller.perform_caching = true
+  config.consider_all_requests_local = true
+  config.action_controller.perform_caching = false
   config.action_controller.cache_store = :file_store, File.join(Rails.root, 'tmp', 'cache', Rails.env)
 
 # Enable serving of images, stylesheets, and javascripts from an asset server
