@@ -76,6 +76,7 @@ gem 'rails-i18n'
 #pretty quickly.
 #gem 'activerecord-mysql2-adapter'
 gem 'mysql2', "< 0.3.11"
+#gem 'pg'
 
 #dump database in YAML form - honestly, I'm not sure why we need this, but
 #while I am porting to Rails 3 I'm not going to worry about it.
