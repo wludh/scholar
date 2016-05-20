@@ -139,7 +139,7 @@ class MembershipsController < ApplicationController
 
   def search_groups
     respond_to do |format|
-      format.html { redirect_to new_person_membership_path(:person_id => params[:person_id],
+      format.html { redirect_to "/scholar" + new_person_membership_path(:person_id => params[:person_id],
                                                            :status => params[:status], :q => params[:q]) }
     end
   end

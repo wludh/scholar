@@ -1,4 +1,6 @@
-- if !group_list_item.hide?
+-# conditional was hiding all departments because the overarching wlu university group was hidden.
+-# if !group_list_item.hide?
+- if 1==1
   - # only show groups that are in the @groups list
   - if @groups.include?(group_list_item)
     %li.parent.list-style-none
