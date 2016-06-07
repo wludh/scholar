@@ -27,3 +27,4 @@ config/initializers/secret_token.rb
 config/initializers/session_store.rb
 zbibappdb.sql
 errors.txt
+public/system/data/
