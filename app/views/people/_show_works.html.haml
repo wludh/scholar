@@ -4,3 +4,4 @@
 %ol.works
   - @works.first(3).each do |work|
     = render "shared/work", :work => work
+    %span.Z3988{:title => coin(work)}
