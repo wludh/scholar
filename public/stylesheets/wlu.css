@@ -173,11 +173,17 @@ table#metadata td.metalabel + td {
     margin-bottom: 6px;
 }
 
-.add-work-btn:hover {
-    color: #000 !important;
-}
-
 .highlight-email-error {
     border: 3px solid #D9534F;
     border-radius: 4px;
+}
+
+#footer {
+    border-top: none;
+    border-bottom: none;
+    padding: 0px;
+}
+
+#footer a {
+    color: #fff;
 }

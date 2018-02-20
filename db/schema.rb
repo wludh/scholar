@@ -59,16 +59,16 @@ ActiveRecord::Schema.define(:version => 20121023171020) do
   add_index "contributorships", ["work_id", "person_id"], :name => "work_person_join"
 
   create_table "delayed_jobs", :force => true do |t|
-    t.integer  "priority",                       :default => 0
-    t.integer  "attempts",                       :default => 0
-    t.text     "handler",    :limit => 16777215
+    t.integer  "priority",   :default => 0
+    t.integer  "attempts",   :default => 0
+    t.text     "handler"
     t.text     "last_error"
     t.datetime "run_at"
     t.datetime "locked_at"
     t.datetime "failed_at"
     t.string   "locked_by"
-    t.datetime "created_at",                                    :null => false
-    t.datetime "updated_at",                                    :null => false
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
     t.string   "queue"
   end
 

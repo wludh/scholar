@@ -53,6 +53,9 @@
       - @works.each do |work|
         = render "shared/work", :work => work, :allow_select => allow_select, :show_status => show_status,
           :show_dupes => show_dupes, :links_array => links_array
+        =# render "shared/work", :work => work, :allow_select => allow_select, :show_status => show_status,
+          #:show_dupes => show_dupes
+        %span.Z3988{:title => coin(work)}
   - else
     .col-xs-12.clear-both.no-padding-or-margin
       = @works.html_safe

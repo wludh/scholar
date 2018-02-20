@@ -1,6 +1,7 @@
 - require 'sword_1_3_adapter'
 .links
-  %strong #{t '.local_library'}: #{link_to_findit(@work)}
+  - unless @work.type == "BookSection" || @work.type == "BookWhole"
+    %strong #{t '.local_library'}: #{link_to_findit(@work)}
   - if @work.attachments.present?
     - if @work.archived?
       - @work.external_system_uris.each do |s|

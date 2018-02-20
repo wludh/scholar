@@ -15,6 +15,7 @@
           %span{:title => publication.sort_name}
           #{link_to name_or_unknown(publication.authority.name), publication_path(publication)}
         %td
-          %span{:title => publication.publisher.sort_name}
-          #{link_to name_or_unknown(publication.publisher.authority.name), publisher_path(publication.publisher)}
+          - if not publication.publisher == nil
+            %span{:title => publication.publisher.sort_name}
+            #{link_to name_or_unknown(publication.publisher.authority.name), publisher_path(publication.publisher)}
         %td #{publication.works.size}

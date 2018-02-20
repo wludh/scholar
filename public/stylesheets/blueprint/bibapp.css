@@ -59,9 +59,11 @@ ul.header-nav a {
   text-decoration: none;
 }
 
+/*
 ul.header-nav a:hover {
   background-color: #E6E6E6;
 }
+*/
 
 /* Primary Navigation (e.g. Works | Groups | People | etc.) */
 #navigation {

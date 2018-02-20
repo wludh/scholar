@@ -24,5 +24,6 @@ Bibapp::Application.configure do
   }
 
 # Uncomment if you need to see something running in production but with more logging
+#  config.log_level = :debug
   config.log_level = :error
 end

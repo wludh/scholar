@@ -41,7 +41,7 @@
     = render subclass_partial_for(work), :work => work
 
     .links
-      - unless links_array.include? 'none'
+      -# unless links_array.include? 'none'
         - my_links = links_array.collect {|link| work_action_link(link, work, @return_path, @saved)}.compact
         - begin
           = my_links.join(' | ').html_safe
